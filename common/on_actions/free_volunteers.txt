@@ -1,0 +1,58 @@
+on_actions = {
+    on_startup = {
+        effect = {
+		if = {
+				limit = {
+					has_game_rule = {
+						rule = Freiwillige_fuer_alle
+						
+						option = Freiwilliger1 
+					}
+				}
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+				add_ideas = Freiwillige1
+                set_rule = { can_send_volunteers = yes }
+            }
+        }
+		}
+		effect = {
+		if = {
+				limit = {
+					has_game_rule = {
+						rule = Freiwillige_fuer_alle
+						
+						option = Freiwilliger2
+					}
+				}
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+				add_ideas = Freiwillige2
+                set_rule = { can_send_volunteers = yes }
+            }
+        }
+		}
+		effect = {
+		if = {
+				limit = {
+					has_game_rule = {
+						rule = Freiwillige_fuer_alle
+						
+						option = Freiwilliger3
+					}
+				}
+            every_country = {
+                limit = {
+                    is_ai = no
+                }
+				add_ideas = Freiwillige3
+                set_rule = { can_send_volunteers = yes }
+            }
+        }
+		}
+    }
+}

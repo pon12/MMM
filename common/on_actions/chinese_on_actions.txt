@@ -1,0 +1,63 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = chinese_unification_status
+						option = CHINA_UNIFIED
+					}
+				}
+				CHI = { ### China Unified ######
+					transfer_state = 326
+					transfer_state = 728
+					transfer_state = 729
+					SHX = {
+						every_unit_leader = {
+							set_nationality = CHI
+						}
+					}
+					XSM = {
+						every_unit_leader = {
+							set_nationality = CHI
+						}
+					}
+					YUN = {
+						every_unit_leader = {
+							set_nationality = CHI
+						}
+					}
+					GXC = {
+						every_unit_leader = {
+							set_nationality = CHI
+						}
+					}
+					annex_country = {
+						target = XSM
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = PRC
+					}
+					annex_country = {
+						target = YUN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SHX
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = GXC
+						transfer_troops = yes
+					}
+					
+				}
+			}
+			
+			
+			
+			
+		}
+	}
+}

@@ -1,0 +1,49 @@
+on_actions = {
+    on_weekly = {
+        
+		effect = {
+		if = {
+				limit = {RAJ = {has_government = fascism}
+				NOT = {has_country_leader = {
+	character = Dai_Roku_Ten_Hajun
+	ruling_only = yes
+	}}
+	has_game_rule = {rule = Hajun option = Hajun2}
+	}
+				RAJ = {
+				
+		
+			create_country_leader = {
+		
+				name = "Dai_Roku_Ten_Hajun"
+				desc = "Ich_kann_das_alles_nich_ mehr"
+				
+				picture = gfx/leaders/AUS/Portrait_Austria_Maier_Zombies2.dds
+				expiring_date = "1985.1.1"
+				ideology = falangism
+			
+				traits = {
+				hedonist
+					
+					
+				}
+		
+			}
+			
+			remove_ideas = RAJ_marginalized_muslim_community
+			set_party_name = {
+			
+				ideology = fascism
+				long_name = Samsara_Vartinl
+				name = Samsara_Vartin
+			}
+			
+			
+			set_cosmetic_tag = MELO
+			}
+			}
+			}
+		
+		}
+    }
+}

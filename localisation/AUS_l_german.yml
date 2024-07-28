@@ -1,0 +1,38 @@
+﻿l_german:
+ MICHI_neutrality: "Michis Österreich"
+ MICHI_neutrality_ADJ: "Michis Österreich"
+ MICHI_DEF: "Michis Österreich"
+ MICHI_fascism: "Michis Österreich"
+ MICHI_fascism_ADJ: "Michis Österreich"
+ MICHI_DEF: "Michis Österreich" 
+ NEE_neutrality: "Neu England"
+ NEE_neutrality_ADJ: "Neu England"
+ NEE_DEF: "Neu England"
+ NEE_fascism: "Neu England"
+ NEE_fascism_ADJ: "Neu England"
+ NEE_DEF: "Neu England" 
+ NEE_communism: "Neu England"
+ NEE_communism_ADJ: "Neu England"
+ NEE_DEF: "Neu England" 
+ NEE_democratic: "Neu England"
+ NEE_democratic_ADJ: "Neu England"
+ NEE_DEF: "Neu England" 
+ 
+ PAZS_neutrality: "Royalistischen Pazifikstaaten"
+ PAZS_neutrality_ADJ: "Royalistischen Pazifikstaaten"
+
+ PAZS_fascism: "Faschistische Pazifikstaaten"
+ PAZS_fascism_ADJ: "Faschistische Pazifikstaaten"
+
+ PAZS_communism: "Union der Sozialistischen Pazifikstaaten"
+ PAZS_communism_ADJ: "Union der Sozialistischen Pazifikstaaten"
+
+ PAZS_democratic: "Pazifikstaaten"
+ PAZS_democratic_ADJ: "Pazifikstaaten"
+
+ MELO_fascism: "Great Tengu Realm of Avarice"
+ MELO_fascism_ADJ: "Great Tengu Realm of Avarice"
+ MELO_DEF: "Great Tengu Realm of Avarice"
+ Dai_Roku_Ten_Hajun: "Dai Roku Ten Hajun"
+ Samsara_Vartinl: "Samsara Vartin"
+ Samsara_Vartin: "Samsara Vartin"

@@ -1,0 +1,737 @@
+operations = {
+	
+	annex_Mexico = {
+		# icon = generic_operation
+		allowed = {
+			tag = CAN
+		}
+		available = {
+			MEX = {
+				is_ai = yes
+				
+			}
+	        
+		    has_game_rule = {rule = historische_focuse option = hist_focus}
+			date > 1939.01.01
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+		
+			tag = CAN
+			
+			
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			MEX
+		}
+		complete_effect = {
+			MEX = {
+				transfer_units_fraction = {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			CAN = {
+				annex_country = {
+					target = MEX
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = MEX
+					is_controlled_by = CAN
+				}
+				add_compliance = 100
+				
+			}
+		}
+	}
+	
+	annex_Mexico_ = {
+		# icon = generic_operation
+		allowed = {
+			tag = BRA
+		}
+		available = {
+			MEX = {
+				is_ai = yes
+				
+			}
+	        
+		    has_game_rule = {rule = historische_focuse option = hist_focus}
+			
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+		
+			tag = BRA
+			
+			
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			MEX
+		}
+		complete_effect = {
+			MEX = {
+				transfer_units_fraction = {
+					target = BRA
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			BRA = {
+				annex_country = {
+					target = MEX
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = MEX
+					is_controlled_by = BRA
+				}
+				add_compliance = 100
+				
+			}
+		}
+	}
+	
+	
+	annex_Bulgaria = {
+		# icon = generic_operation
+		allowed = {
+			tag = ROM
+		}
+		available = {
+			BUL = {
+				is_ai = yes
+				
+			}
+	        
+		    has_game_rule = {rule = historische_focuse option = hist_focus}
+			
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+		
+			tag = ROM
+			
+			
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			BUL
+		}
+		complete_effect = {
+			BUL = {
+				transfer_units_fraction = {
+					target = ROM
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			ROM = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BUL
+					is_controlled_by = ROM
+				}
+				add_compliance = 100
+				
+			}
+		}
+	}
+	
+	annex_Brazil = {
+		# icon = generic_operation
+		allowed = {
+			tag = CAN
+		}
+		available = {
+			MEX = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+			date > 1939.01.01
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = CAN
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			BRA
+		}
+		complete_effect = {
+			BRA = {
+				transfer_units_fraction = {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			CAN = {
+				annex_country = {
+					target = BRA
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BRA
+					is_controlled_by = CAN
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	
+	annex_South_Africa = {
+		# icon = generic_operation
+		allowed = {
+			tag = CAN
+		}
+		available = {
+			SAF = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = CAN
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			SAF
+		}
+		complete_effect = {
+			SAF = {
+				transfer_units_fraction = {
+					target = CAN
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			CAN = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SAF
+					is_controlled_by = CAN
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	
+	annex_New_Zealand = {
+		# icon = generic_operation
+		allowed = {
+			tag = RAJ
+		}
+		available = {
+			NZL = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+			AST = {
+				is_ai = yes
+				
+			}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = RAJ
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			NZL
+		}
+		complete_effect = {
+			NZL = {
+				transfer_units_fraction = {
+					target = RAJ
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			RAJ = {
+				annex_country = {
+					target = NZL
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = NZL
+					is_controlled_by = RAJ
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	annex_New_Zealand_ = {
+		# icon = generic_operation
+		allowed = {
+			tag = AST
+		}
+		available = {
+			NZL = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = AST
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			NZL
+		}
+		complete_effect = {
+			NZL = {
+				transfer_units_fraction = {
+					target = AST
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			AST = {
+				annex_country = {
+					target = NZL
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = NZL
+					is_controlled_by = AST
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	annex_Australia = {
+		# icon = generic_operation
+		allowed = {
+			tag = RAJ
+		}
+		available = {
+			AST = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = RAJ
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			AST
+		}
+		complete_effect = {
+			AST = {
+				transfer_units_fraction = {
+					target = RAJ
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			RAJ = {
+				annex_country = {
+					target = AST
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = AST
+					is_controlled_by = RAJ
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	
+	annex_mongolia = {
+		# icon = generic_operation
+		allowed = {
+			tag = SOV
+		}
+		available = {
+			MON = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = SOV
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			MON
+		}
+		complete_effect = {
+			MON = {
+				transfer_units_fraction = {
+					target = SOV
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			SOV = {
+				annex_country = {
+					target = MON
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = MON
+					is_controlled_by = SOV
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	
+	annex_tuva = {
+		# icon = generic_operation
+		allowed = {
+			tag = SOV
+		}
+		available = {
+			TAN = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = SOV
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+		}
+		targets = {
+			TAN
+		}
+		complete_effect = {
+			TAN = {
+				transfer_units_fraction = {
+					target = SOV
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			SOV = {
+				annex_country = {
+					target = TAN
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = TAN
+					is_controlled_by = SOV
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	
+	annex_siam = {
+		# icon = generic_operation
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			SIA = {
+				is_ai = yes
+				
+				
+			}
+		has_game_rule = {rule = historische_focuse option = hist_focus}
+			NOT = {country_exists = CHI}
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = JAP
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+			
+		}
+		targets = {
+			SIA
+		}
+		complete_effect = {
+			SIA = {
+				transfer_units_fraction = {
+					target = JAP
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			JAP = {
+				annex_country = {
+					target = SIA
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = SIA
+					is_controlled_by = JAP
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	
+
+	
+	annex_manchukuo = {
+		# icon = generic_operation
+		allowed = {
+			tag = JAP
+			
+		}
+		available = {
+			MAN = {
+				is_ai = yes
+				
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+			
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = JAP
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+			
+		}
+		targets = {
+			MAN
+		}
+		complete_effect = {
+			MAN = {
+				transfer_units_fraction = {
+					target = JAP
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			JAP = {
+				annex_country = {
+					target = MAN
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = MAN
+					is_controlled_by = JAP
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	annex_menkukuo = {
+		# icon = generic_operation
+		allowed = {
+			tag = JAP
+		}
+		available = {
+			MEN = {
+				is_ai = yes
+			}
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+			
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = JAP
+			has_game_rule = {rule = historische_focuse option = hist_focus}
+			
+		}
+		targets = {
+			MEN
+		}
+		complete_effect = {
+			MEN = {
+				transfer_units_fraction = {
+					target = JAP
+					size = 1
+					stockpile_ratio = 1
+					army_ratio = 1
+					navy_ratio = 1
+					air_ratio = 1
+					keep_unit_leaders_trigger = {
+						always = no
+					}
+				}
+			}
+			JAP = {
+				annex_country = {
+					target = MEN
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = MEN
+					is_controlled_by = JAP
+				}
+				add_compliance = 100
+			}
+		}
+	}
+	
+}
+
+

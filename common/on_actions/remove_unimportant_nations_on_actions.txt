@@ -1,0 +1,221 @@
+on_actions = {
+	on_startup = {
+		effect = {
+		
+		
+		
+		
+		
+		
+		
+		
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = remove_unimportant_nations
+						option = REMOVE
+					}
+				}
+				  MAN = {
+				  add_state_core = 612
+				  add_state_core = 611
+				  add_state_core = 621
+				   add_state_core = 746
+					annex_country = {
+						target = MEN
+						transfer_troops = yes
+					}
+				}
+				
+			    ETH = {
+				 add_state_core = 550
+				  add_state_core = 559
+				  add_state_core = 844
+					annex_country = {
+						target = AFA
+						transfer_troops = yes
+					}
+				}
+				MON = {
+				add_state_core = 329
+				  add_state_core = 618
+				  add_state_core = 760
+				   add_state_core = 759
+				   add_state_core = 287
+				    add_state_core = 619
+					 add_state_core = 617
+					annex_country = {
+						target = TAN
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = SIK
+						transfer_troops = yes
+					}
+				}
+				HOL = {
+				add_state_core = 6
+				add_state_core = 34
+				add_state_core = 8
+					annex_country = {
+						target = BEL
+						transfer_troops = yes
+					}
+					annex_country = {
+						target = LUX
+						transfer_troops = yes
+					}
+				}
+				LIT = {
+				add_state_core = 190
+				  add_state_core = 809
+				  add_state_core = 808
+				   add_state_core = 810
+				   add_state_core = 12
+				    add_state_core = 13
+					 add_state_core = 811
+					 add_state_core = 812
+					 add_state_core = 813
+					 add_state_core = 191
+					annex_country = {
+						target = LAT
+						transfer_troops = no
+					}
+					annex_country = {
+						target = EST
+						transfer_troops = no
+					}
+				}
+				DEN = {annex_country = {target = ICE
+				transfer_troops = no}}	
+				NIX = { 
+				
+					
+					annex_country = {
+						target = SWI
+						transfer_troops = no
+					}
+					annex_country = {
+						target = URG
+						transfer_troops = no
+					}
+					annex_country = {
+						target = PAR
+					}
+					annex_country = {
+						target = CHL
+						transfer_troops = no
+					}
+					annex_country = {
+						target = BOL
+						transfer_troops = no
+					}
+					annex_country = {
+						target = PRU
+						transfer_troops = no
+					}
+					annex_country = {
+						target = ECU
+						transfer_troops = no
+					}
+					annex_country = {
+						target = COL
+						transfer_troops = no
+					}
+					annex_country = {
+						target = PAN
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = COS
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = NIC
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = HON
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = ELS
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = GUA
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = CUB
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = HAI
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = DOM
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = LIB
+						transfer_troops = no
+					}
+					
+					annex_country = {
+						target = YEM
+						transfer_troops = no
+					}
+					annex_country = {
+						target = OMA
+						transfer_troops = no
+					}
+					annex_country = {
+						target = SAU
+						transfer_troops = no
+					}
+					annex_country = {
+						target = PER
+						transfer_troops = no
+					}
+					annex_country = {
+						target = AFG
+						transfer_troops = no
+					}
+					annex_country = {
+						target = TUR
+						transfer_troops = no
+					}
+					annex_country = {
+						target = IRQ
+						transfer_troops = no
+					}
+					annex_country = {
+						target = NEP
+						transfer_troops = no
+					}
+					annex_country = {
+						target = BHU
+						transfer_troops = no
+					}
+					annex_country = {
+						target = TIB
+						transfer_troops = no
+					}
+				
+				}
+			}}}}
+			
+					
+				
+			

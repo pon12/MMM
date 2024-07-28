@@ -1,0 +1,358 @@
+horst_host_country = {
+	name = "Select_Host"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = GER
+		text = "Germany"
+		desc = ""
+	}
+
+	option = {
+		name = ITA
+		text = "Italy"
+		desc = ""
+	}
+	option = {
+		name = ROM
+		text = "Romania"
+		desc = ""
+	}
+	option = {
+		name = HUN
+		text = "Hungary"
+		desc = ""
+	}
+	option = {
+		name = BUL
+		text = "Bulgaria"
+		desc = ""
+	}
+	option = {
+		name = FIN
+		text = "Finland"
+		desc = ""
+	}
+	option = {
+		name = ENG
+		text = "Great Britain"
+		desc = ""
+	}
+	option = {
+		name = USA
+		text = "USA"
+		desc = ""
+	}
+	option = {
+		name = CAN
+		text = "Canada"
+		desc = ""
+	}
+	option = {
+		name = SAF
+		text = "South Africa"
+		desc = ""
+	}
+	option = {
+		name = RAJ
+		text = "British Raj"
+		desc = ""
+	}
+	option = {
+		name = AST
+		text = "Australia"
+		desc = ""
+	}
+	option = {
+		name = JAP
+		text = "Japan"
+		desc = ""
+	}
+	option = {
+		name = SOV
+		text = "Soviet Union"
+		desc = ""
+	}
+	option = {
+		name = FRA
+		text = "France"
+		desc = ""
+	}
+	option = {
+		name = SPR
+		text = "Spain"
+		desc = ""
+	}
+	option = {
+		name = BRA
+		text = "Brazil"
+		desc = ""
+	}
+	option = {
+		name = ARG
+		text = "Argentinien"
+		desc = ""
+	}
+	option = {
+		name = CHL
+		text = "Chile"
+		desc = ""
+	}
+	option = {
+		name = URG
+		text = "Uruguay"
+		desc = ""
+	}
+	option = {
+		name = PAR
+		text = "Paraguay"
+		desc = ""
+	}
+	option = {
+		name = SWE
+		text = "Sweden"
+		desc = ""
+	}
+	option = {
+		name = NOR
+		text = "Norwegen"
+		desc = ""
+	}
+	option = {
+		name = DAN
+		text = "Dänemarck"
+		desc = ""
+	}
+	option = {
+		name = ICE
+		text = "Island"
+		desc = ""
+	}
+	option = {
+		name = ETH
+		text = "Ethopien"
+		desc = ""
+	}
+	option = {
+		name = AUS
+		text = "Austria"
+		desc = ""
+	}
+	option = {
+		name = SWI
+		text = "Switzerland"
+		desc = ""
+	}
+	option = {
+		name = YUG
+		text = "Jugoslavia"
+		desc = ""
+	}
+	
+	option = {
+		name = POL
+		text = "Poland"
+		desc = ""
+	}
+	option = {
+		name = POR
+		text = "Portugal"
+		desc = ""
+	}
+	option = {
+		name = TUR
+		text = "Turkey"
+		desc = ""
+	}
+	option = {
+		name = CZE
+		text = "Chechoslovakia"
+		desc = ""
+	}
+	option = {
+		name = HOL
+		text = "Netherlands"
+		desc = ""
+	}
+	option = {
+		name = GRE
+		text = "Griechenland"
+		desc = ""
+	}
+	
+}
+
+historische_focuse = {
+	name = "Historische Spieler Focuse"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = Keine_hist_focis
+		text = "Nein"
+		desc = "Spieler können machen was sie wollen"
+	}
+
+	option = {
+		name = Hist_focus
+		text = "Histroische Focus Pflicht"
+		desc = "Spieler können (fast)nur historische focuse machen mit ein paar ausnahmen wo es eh keinen unterschied macht"
+	}
+	
+}
+
+horst_host_country1 = {
+	name = "Michis Austria"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = Austria
+		text = "Nein"
+		desc = ""
+	}
+
+	option = {
+		name = Austria1
+		text = "Ja"
+		desc = "Michi_takes_power"
+	}
+	
+}
+
+
+horst_host_country2 = {
+	name = "USA Fragmentation"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = KeineUSAFragmentation
+		text = "Keine Fragmenation"
+		desc = ""
+	}
+
+	option = {
+		name = USAFragmentation1
+		text = "Fragmenation"
+		desc = "Sehr_Cursed"
+	}
+	
+}
+
+horst_host_country3 = {
+	name = "Deutschland Fragmentation"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = KeineGERFragmentation
+		text = "Keine Fragmenation"
+		desc = ""
+	}
+
+	option = {
+		name = GERFragmentation1
+		text = "BRD/DDR"
+		desc = "Sehr_Cursed"
+	}
+	option = {
+		name = GERFragmentation2
+		text = "Fragmentiert"
+		desc = "Sehr_Cursed"
+	}
+	
+}
+
+remove_unimportant_nations = {
+	name = "Unwichtige Nationen entfernen"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = DEFAULT
+		text = "Nein"
+		desc = "Hier_bleibt_alles_so_wie_es_ist"
+	}
+	option = {
+		name = REMOVE
+		text = "Entfernen"
+		desc = "Alle_Unwichtigen_Nationen_Entfernen"
+	}
+	
+	
+}
+
+chinese_unification_status = {
+	name = "Chinestische Einigkeit"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = DEFAULT
+		text = "Standard"
+		desc = "Alles bleibt so wie es ist"
+	}
+	option = {
+		name = CHINA_UNIFIED
+		text = "China vereinigt"
+		desc = "China wird unter den Nationalisten vereinigt"
+	}
+	
+	
+}
+Freiwillige_fuer_alle = {
+	name = "Freiwillige"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = DEFAULT
+		text = "Vanilla"
+		desc = "Alles bleibt so wie es ist"
+	}
+	option = {
+		name = Freiwilliger1
+		text = "1 Freiwilliger für Jeden"
+		desc = "Alle Spieler können immer eine Freiwillige Division schicken."
+	}
+	option = {
+		name = Freiwilliger2
+		text = "2 Freiwilliger für Jeden"
+		desc = "Alle Spieler können immer 2 Freiwillige Division schicken."
+	}
+	option = {
+		name = Freiwilliger3
+		text = "3 Freiwilliger für Jeden"
+		desc = "Alle Spieler können immer 3 Freiwillige Division schicken."
+	}
+	
+	}
+
+Player_Led_Peace = {
+	name = "Friedensverhandlungen"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = DEFAULT
+		text = "Vanilla"
+		desc = "Die Preise bleiben gleich und die KI nimmt teil."
+	}
+	option = {
+		name = Player_Led_Peace
+		text = "Spieler Kontrolliert"
+		desc = "Alle Spieler Kontrollieren die Friedensverhandlungen und können alles nehmen die KI kann nichts machen."
+	}
+	
+	
+	}
+Hajun = {
+	name = "Hajun Indien"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = DEFAULT
+		text = "Nein"
+		desc = "Hajun wird nicht Leader von Indien wenn Faschistisch"
+	}
+	option = {
+		name = Hajun2
+		text = "Ja"
+		desc = "Hajun wird schrecken verbreiten."
+	}
+	
+	
+	}

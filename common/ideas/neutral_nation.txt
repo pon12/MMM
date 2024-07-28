@@ -1,0 +1,90 @@
+ideas = {
+
+	country = {
+	
+		
+		
+		neutral_nation = {
+			picture = generic_morale_bonus
+			
+			allowed = {
+			    always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				ai_focus_peaceful_factor = 500
+			    join_faction_tension = 999
+				local_resources_factor = 0.1
+				recruitable_population = -1
+				recruitable_population_factor = -1
+				
+				justify_war_goal_time = 10000
+				enemy_justify_war_goal_time = 10000
+				conscription = -1
+				conscription_factor = -1
+				guarantee_cost = 10000
+				min_export = 10
+				mobilization_speed = -9
+				drift_defence_factor = 999
+				ai_get_ally_desire_factor = -1000
+			}
+		}
+		
+		Grosse_Depression = {
+			picture = great_depression
+			
+			allowed = {
+			    always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				consumer_goods_factor = 0.4
+				stability_factor = -0.2
+				war_support_factor = -0.1
+				conscription_factor = -0.10
+				political_power_gain = -0.1
+				
+				
+			}
+		}
+		Slave_states = {
+			picture = ast_classify_aliens
+			
+			allowed = {
+			    always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
+				min_export = 0.10
+				stability_factor = -0.1
+				conscription_factor = -0.50
+				justify_war_goal_time = 0.5
+				political_power_gain = -0.1
+			}
+		}
+		
+	}
+}

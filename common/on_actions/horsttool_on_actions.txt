@@ -1,0 +1,470 @@
+on_actions = {
+	on_startup = {
+	
+		effect = {
+		if = {
+				limit = {has_game_rule = {rule = horst_host_country1 option = Austria1}}
+				AUS = {
+				retire_country_leader = yes
+		
+			create_country_leader = {
+		
+				name = "Maier Zombies"
+				desc = "Crazy? I was crazy once."
+				
+				picture = gfx/leaders/AUS/Portrait_Austria_Maier_Zombies.dds
+				expiring_date = "1985.1.1"
+				ideology = centrism
+			
+				traits = {
+				dictator
+				fascist_sympathies
+				dislikes_germany
+					
+					
+				}
+		
+			}
+			set_party_name = { 
+			
+				ideology = Neutrality
+				long_name = Michis_Front
+				name = Michis_Front
+			}
+			set_party_name = {
+			
+				ideology = fascism
+				long_name = Rechte_Zuschauer
+				name = Rechte_Zuschauer
+			}
+			set_party_name = {
+			
+				ideology = communism
+				long_name = Linke_Zuschauer
+				name = Linke_Zuschauer
+			}
+			set_party_name = {
+			
+				ideology = democratic
+				long_name = Zuschauer
+				name = Zuschauer
+			}
+			add_popularity = {
+				ideology = neutrality
+				popularity = 1
+			}
+			set_cosmetic_tag = MICHI
+			}
+			}
+			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			effect = {
+	if = {
+				limit = {has_game_rule = {rule = horst_host_country3 option = GERFragmentation1}}
+				WGR = {
+				transfer_state = 909
+				transfer_state = 58
+				transfer_state = 59
+				transfer_state = 56
+				transfer_state = 57
+				transfer_state = 51
+				transfer_state = 42
+				transfer_state = 55
+				transfer_state = 54
+				transfer_state = 53
+				transfer_state = 52
+				transfer_state = 50
+			add_state_core = 909
+			add_state_core = 58
+			add_state_core = 59
+			add_state_core = 56
+			add_state_core = 57
+			add_state_core = 51
+			add_state_core = 42
+			add_state_core = 55
+			add_state_core = 54
+			add_state_core = 53
+			add_state_core = 52
+			add_state_core = 50
+			42 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+				}
+				DDR = {
+				transfer_state = 62
+				transfer_state = 61
+				transfer_state = 64
+				transfer_state = 65
+				transfer_state = 60
+				add_state_core = 62
+			add_state_core = 61
+			add_state_core = 64
+			add_state_core = 65
+			add_state_core = 60
+			add_state_core = 62
+				}
+				SOV = {transfer_state = 763}
+				POL = {
+				add_state_core = 5
+				add_state_core = 67
+				transfer_state = 5
+				transfer_state = 63
+				transfer_state = 68
+				transfer_state = 66
+				transfer_state = 67
+				}
+			}
+			}
+			effect = {
+	if = {
+				limit = {has_game_rule = {rule = horst_host_country3 option = GERFragmentation2}}
+				SAX = {
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.4
+			}
+				transfer_state = 65
+				add_state_core = 65
+				transfer_state = 60
+				add_state_core = 60
+				}
+				SIL = {
+				transfer_state = 66
+				transfer_state = 67
+				
+				}
+				HAN = {
+				transfer_state = 59
+				transfer_state = 56
+				transfer_state = 57
+				add_state_core = 59
+				add_state_core = 56
+				add_state_core = 57
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.4
+			}}
+			WGR = {
+			transfer_state = 51
+				transfer_state = 55
+				transfer_state = 42
+				add_state_core = 55
+				add_state_core = 51
+				add_state_core = 42
+				42 = { set_demilitarized_zone = no }
+			51 = { set_demilitarized_zone = no }
+			}
+				
+				PRE = {
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.5
+			}
+				transfer_state = 763
+				transfer_state = 5
+				add_state_core = 763
+				add_state_core = 5
+				
+				}
+				WUR = {
+				transfer_state = 50
+				add_state_core = 50
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.4
+			}
+				}
+				DDR = {
+				transfer_state = 64
+				
+				add_state_core = 64
+				
+				}
+				MEK = {
+				
+				transfer_state = 62
+				transfer_state = 61
+				
+				add_state_core = 62
+				add_state_core = 61
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.4
+			}
+				}
+				SHL = {
+				
+				transfer_state = 909
+				transfer_state = 58
+				
+				add_state_core = 909
+				add_state_core = 58
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.4
+			}
+				}
+				KSH = {
+				transfer_state = 63
+				transfer_state = 68
+				add_state_core = 68
+				}
+				BAY = {
+				add_popularity = {
+				ideology = neutrality
+				popularity = 0.4
+			}
+			add_state_core = 52
+			add_state_core = 53
+			add_state_core = 54
+				transfer_state = 52
+				transfer_state = 53
+				transfer_state = 54
+				}
+			}
+			}
+			
+			
+			
+			
+			
+			effect = {
+	if = {
+				limit = {has_game_rule = {rule = horst_host_country2 option = USAFragmentation1}}
+				
+				CSA = {set_politics = {
+	ruling_party = fascism
+	elections_allowed = no
+}
+add_timed_idea = { idea = Grosse_Depression  days = 1100 }
+add_ideas = Slave_states
+remove_ideas = home_of_the_free
+				add_popularity = {
+				ideology = fascism
+				popularity = 0.6
+			}
+			
+			add_state_core = 366
+			add_state_core = 365
+			add_state_core = 367	
+			add_state_core = 370
+			add_state_core = 371
+			add_state_core = 375
+			add_state_core = 376
+			add_state_core = 377
+			add_state_core = 374
+			add_state_core = 372
+			add_state_core = 368
+			add_state_core = 364
+			add_state_core = 363
+			add_state_core = 362
+			add_state_core = 373
+			add_state_core = 816
+			add_state_core = 369
+				transfer_state = 366
+				transfer_state = 365
+				transfer_state = 367
+				transfer_state = 370
+				transfer_state = 371
+				transfer_state = 375
+				transfer_state = 376
+				transfer_state = 377
+				transfer_state = 374
+				transfer_state = 372
+				transfer_state = 368
+				transfer_state = 364
+				transfer_state = 363
+				transfer_state = 362
+				transfer_state = 373
+				transfer_state = 816
+				transfer_state = 369
+			}
+			CAN = {transfer_state = 463 add_state_core = 463}
+			NEE = {
+			add_timed_idea = { idea = Grosse_Depression  days = 760 }
+			
+			transfer_state = 357
+			transfer_state = 358
+			transfer_state = 359
+			add_state_core = 357
+			add_state_core = 358
+			add_state_core = 359
+			}
+			PUE = {
+			set_cosmetic_tag = PAZS
+			add_timed_idea = { idea = Grosse_Depression  days = 760 }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.4
+			}
+			transfer_state = 629
+			transfer_state = 685
+			transfer_state = 378
+			transfer_state = 379
+			transfer_state = 385
+			add_state_core = 686
+			add_state_core = 685
+			add_state_core = 378
+			add_state_core = 379
+			add_state_core = 385
+			}
+			}}
+			effect = {
+			if = {
+				limit = {has_game_rule = {rule = horst_host_country option = GER}}
+				set_variable={host = GER.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ITA}}
+				set_variable={host = ITA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ROM}}
+				set_variable={host = ROM.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = HUN}}
+				set_variable={host = HUN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = BUL}}
+				set_variable={host = BUL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = USA}}
+				set_variable={host = USA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ENG}}
+				set_variable={host = ENG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = CAN}}
+				set_variable={host = CAN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SAF}}
+				set_variable={host = SAF.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = RAJ}}
+				set_variable={host = RAJ.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = AST}}
+				set_variable={host = AST.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = JAP}}
+				set_variable={host = JAP.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SOV}}
+				set_variable={host = SOV.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = FRA}}
+				set_variable={host = FRA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SPR}}
+				set_variable={host = SPR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = BRA}}
+				set_variable={host = BRA.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SWE}}
+				set_variable={host = SWE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = AUS}}
+				set_variable={host = AUS.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SWI}}
+				set_variable={host = SWI.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = YUG}}
+				set_variable={host = YUG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = POL}}
+				set_variable={host = POL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = POR}}
+				set_variable={host = POR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = TUR}}
+				set_variable={host = TUR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = CZE}}
+				set_variable={host = CZE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = HOL}}
+				set_variable={host = HOL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ETH}}
+				set_variable={host = ETH.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ICE}}
+				set_variable={host = ICE.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = DAN}}
+				set_variable={host = DAN.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = NOR}}
+				set_variable={host = NOR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = PAR}}
+				set_variable={host = PAR.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = URG}}
+				set_variable={host = URG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = CHL}}
+				set_variable={host = CHL.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = ARG}}
+				set_variable={host = ARG.id}
+			}
+			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = GRE}}
+				set_variable={host = GRE.id}
+			}
+			
+			var:host = {
+				set_variable = { marked_states = 0 }
+				set_country_flag = host
+			}
+		}
+	}
+}
+
