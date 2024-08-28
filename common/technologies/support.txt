@@ -402,7 +402,41 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
-		
+
+		recon = {
+			plains = {
+				attack = 0.02
+				defence = 0.03
+			}
+		}
+
+		mot_recon = {
+			plains = {
+				attack = 0.03
+				defence = 0.02
+			}
+		}
+
+		light_tank_recon = {
+			forest = {
+				attack = 0.02
+				defence = 0.02
+			}
+		}
+
+		armored_car_recon = {
+			plains = {
+				attack = 0.08
+				defence = 0.08
+			}
+		}
+
+		rangers_support = {
+			plains = {
+				attack = 0.02	
+				defence = 0.03
+			}
+		}
 		path = {
 			leads_to_tech = tech_recon3
 			research_cost_coeff = 1
@@ -445,6 +479,40 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
+		recon = {
+			plains = {
+				attack = 0.01
+				defence = 0.02
+			}
+		}
+
+		mot_recon = {
+			plains = {
+				attack = 0.02
+				defence = 0.01
+			}
+		}
+
+		light_tank_recon = {
+			forest = {
+				attack = 0.01
+				defence = 0.01
+			}
+		}
+
+		armored_car_recon = {
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		
+		rangers_support = {
+			plains = {
+				attack = 0.01
+				defence = 0.02
+			}
+		}
 		path = {
 			leads_to_tech = tech_recon4
 			research_cost_coeff = 1
@@ -486,7 +554,40 @@ technologies = {
 		category_recon = {
 			recon = 2
 		}
+		recon = {
+			plains = {
+				attack = 0.01
+				defence = 0.02
+			}
+		}
 
+		mot_recon = {
+			plains = {
+				attack = 0.02
+				defence = 0.01
+			}
+		}
+
+		light_tank_recon = {
+			forest = {
+				attack = 0.01
+				defence = 0.01
+			}
+		}
+
+		armored_car_recon = {
+			plains = {
+				attack = 0.05
+				defence = 0.05
+			}
+		}
+		
+		rangers_support = {
+			plains = {
+				attack = 0.01
+				defence = 0.02
+			}
+		}
 		research_cost = 2.0
 		start_year = 1945
 		folder = {
@@ -589,6 +690,7 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			max_organisation = 20
 		}
 		
 		
@@ -623,6 +725,7 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			max_organisation = 20
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -654,6 +757,7 @@ technologies = {
 
 		military_police = {
 			suppression_factor = 0.1
+			max_organisation = 25
 		}
 
 		research_cost = 2.0
@@ -1303,6 +1407,7 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			max_organisation = 15
 		}
 		
 		
@@ -1348,6 +1453,7 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			max_organisation = 15
 		}
 		path = {
 			leads_to_tech = tech_signal_company4
@@ -1390,6 +1496,7 @@ technologies = {
 
 		signal_company = {
 			initiative = 0.12
+			max_organisation = 20
 		}
 
 		research_cost = 2.0
