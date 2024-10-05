@@ -1,0 +1,15 @@
+
+
+MON_Mongolian_Tank_Forge = {
+	name = MON_Mongolian_Tank_Forge
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_porsche
+	allowed = {
+		original_TAG = MON
+	}
+	available = {
+		owner = { has_completed_focus = MON_rebuild_the_armed_forces4 }
+	}
+	
+}
+

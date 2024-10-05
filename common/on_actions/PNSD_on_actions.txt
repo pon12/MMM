@@ -2,6 +2,10 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			MON = {add_ideas = {Mongol_living}}
+			MON = {add_ideas = {MON_tribal_warfare}}
+			MON = {add_ideas = {MON_planed_economy}}
+			
 			every_possible_country = { add_ideas = PNSD_hidden }
 		}
 	}

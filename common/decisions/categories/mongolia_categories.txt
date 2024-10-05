@@ -1,0 +1,21 @@
+mon_khan_decisions = {
+	priority = 1000
+	visible_when_empty = no
+	icon = generic_propaganda
+
+	visible = {
+
+
+	}
+}
+
+mon_economic_reforms = {
+	priority = 1000
+	visible_when_empty = no
+	icon = generic_propaganda
+
+	visible = {
+
+
+	}
+}

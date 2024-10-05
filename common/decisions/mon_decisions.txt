@@ -1,0 +1,272 @@
+mon_khan_decisions = {
+	
+	Form_the_Mongolian_empire = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Revive_the_Khanate
+		
+		}
+		fire_only_once = yes
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			has_completed_focus = MON_Revive_the_Khanate
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 04_MON_tt
+			every_state = {
+				limit = {
+					is_core_of = SOV
+					is_core_of = ROM
+					is_core_of = CHI
+					is_core_of = IRQ
+					is_core_of = PER
+					is_core_of = AFG
+					is_core_of = TAN
+					is_controlled_by = MON
+					
+				}
+				add_core_of = MON
+				
+			}
+			
+		}
+	}
+	
+
+	
+	
+	
+	
+}
+mon_economic_reforms = {
+	
+	mon_lower_consumer_godds = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Economic_reforms
+		
+		}
+		days_remove = 100
+		fire_only_once = yes
+		cost = 25
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			has_completed_focus = MON_Economic_reforms
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 01_MON_economic_tt
+
+			set_variable = { MON.var_consumer_goods_mongolia = 0.2 }
+			
+		}
+		remove_effect = {
+            custom_effect_tooltip = 02_MON_economic_tt
+			set_variable = { mon_temp1 = 1}
+        }
+	}
+	mon_lower_consumer_godds2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Economic_reforms
+		
+		}
+		days_remove = 100
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			check_variable = { mon_temp1= 1 }
+			has_completed_focus = MON_Economic_reforms
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 03_MON_economic_tt
+			set_variable = { MON.var_consumer_goods_mongolia = 0.05 }
+			
+		}
+		remove_effect = {
+            custom_effect_tooltip = 02_MON_economic_tt
+			add_to_variable = { mon_temp1 = 1}
+        }
+	}
+	mon_lower_consumer_godds3 = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Economic_reforms
+		
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			check_variable = { mon_temp1= 2 }
+			has_completed_focus = MON_Economic_reforms
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 01_MON_economic_tt
+
+			set_variable = { MON.var_consumer_goods_mongolia = -0.05 }
+			
+		}
+	}
+	
+
+
+
+	mon_better_efficiency = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Economic_reforms
+		
+		}
+		days_remove = 100
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			has_completed_focus = MON_Economic_reforms
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 06_MON_economic_tt
+
+			set_variable = { MON.var_factory_efficiency_gain_mongolia = 0.05 }
+			set_variable = { MON.var_factory_efficiency_max_mongolia = 0.05 }
+		}
+		remove_effect = {
+            custom_effect_tooltip = 02_MON_economic_tt
+			set_variable = { mon_temp2 = 1}
+        }
+	}
+	mon_better_efficiency2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Economic_reforms
+		
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			check_variable = { mon_temp2= 1 }
+			has_completed_focus = MON_Economic_reforms
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 06_MON_economic_tt
+			set_variable= { MON.var_factory_efficiency_gain_mongolia = 0.1 }
+			set_variable = { MON.var_factory_efficiency_max_mongolia = 0.1 }
+			
+			
+		}
+		
+	}
+
+	mon_better_construction = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Economic_reforms
+		
+		}
+		days_remove = 100
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			has_completed_focus = MON_Economic_reforms
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 07_MON_economic_tt
+
+			set_variable = { MON.var_construction_speed_mongolia = 0.15 }
+			set_variable = { MON.var_mil_facotry_mongolia = 0.1 }
+		}
+		remove_effect = {
+            custom_effect_tooltip = 02_MON_economic_tt
+			set_variable = { mon_temp3 = 1}
+        }
+	}
+	mon_better_construction2 = {
+		# icon = generic_operation
+		allowed = {
+			tag = MON
+		}
+		available = {
+		has_completed_focus = MON_Economic_reforms
+		
+		}
+		fire_only_once = yes
+		cost = 50
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			tag = MON
+			check_variable = { mon_temp3= 1 }
+			has_completed_focus = MON_Economic_reforms
+		}
+		
+		complete_effect = {
+			custom_effect_tooltip = 07_MON_economic_tt
+			set_variable= { MON.var_construction_speed_mongolia = 0.2 }
+			set_variable = { MON.var_mil_facotry_mongolia = 0.2 }
+			
+			
+		}
+		
+	}
+
+
+
+
+
+
+}
+

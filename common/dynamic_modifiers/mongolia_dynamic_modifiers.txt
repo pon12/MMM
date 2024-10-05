@@ -1,0 +1,20 @@
+dynamic_modifier_mongolia_ecnonomy = {
+    icon = GFX_idea_ARG_civilian_economy_boost
+    enable = { always = yes }
+    remove_trigger = {
+     #   NOT = {
+     #       has_variable = var_name
+     #   }
+    }
+    	production_speed_aluminum_mill_factor = 0.2
+		production_speed_steel_mill_factor = 0.2
+
+		production_speed_industrial_complex_factor = var_construction_speed_mongolia
+
+		production_speed_arms_factory_factor = var_mil_facotry_mongolia
+
+		consumer_goods_factor = var_consumer_goods_mongolia
+
+		production_factory_efficiency_gain_factor = var_factory_efficiency_gain_mongolia
+		production_factory_max_efficiency_factor = var_factory_efficiency_max_mongolia
+}
