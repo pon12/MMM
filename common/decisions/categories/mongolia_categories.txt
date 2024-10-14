@@ -13,7 +13,6 @@ mon_economic_reforms = {
 	priority = 1000
 	visible_when_empty = no
 	icon = generic_propaganda
-
 	visible = {
 
 

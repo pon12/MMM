@@ -76,7 +76,7 @@ mon_economic_reforms = {
 		}
 		remove_effect = {
             custom_effect_tooltip = 02_MON_economic_tt
-			set_variable = { mon_temp1 = 1}
+			add_to_variable = { mon_temp1 = 1}
         }
 	}
 	mon_lower_consumer_godds2 = {
@@ -134,7 +134,7 @@ mon_economic_reforms = {
 			custom_effect_tooltip = 01_MON_economic_tt
 
 			set_variable = { MON.var_consumer_goods_mongolia = -0.05 }
-			
+			add_to_variable = { mon_temp1 = 1}
 		}
 	}
 	
@@ -169,7 +169,7 @@ mon_economic_reforms = {
 		}
 		remove_effect = {
             custom_effect_tooltip = 02_MON_economic_tt
-			set_variable = { mon_temp2 = 1}
+			add_to_variable = { mon_temp2 = 1}
         }
 	}
 	mon_better_efficiency2 = {
@@ -196,7 +196,7 @@ mon_economic_reforms = {
 			custom_effect_tooltip = 06_MON_economic_tt
 			set_variable= { MON.var_factory_efficiency_gain_mongolia = 0.1 }
 			set_variable = { MON.var_factory_efficiency_max_mongolia = 0.1 }
-			
+			add_to_variable = { mon_temp2 = 1}
 			
 		}
 		
@@ -230,7 +230,7 @@ mon_economic_reforms = {
 		}
 		remove_effect = {
             custom_effect_tooltip = 02_MON_economic_tt
-			set_variable = { mon_temp3 = 1}
+			add_to_variable = { mon_temp3 = 1}
         }
 	}
 	mon_better_construction2 = {
@@ -257,7 +257,7 @@ mon_economic_reforms = {
 			custom_effect_tooltip = 07_MON_economic_tt
 			set_variable= { MON.var_construction_speed_mongolia = 0.2 }
 			set_variable = { MON.var_mil_facotry_mongolia = 0.2 }
-			
+			add_to_variable = { mon_temp3 = 1}
 			
 		}
 		

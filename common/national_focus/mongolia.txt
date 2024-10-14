@@ -89,7 +89,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			leave_faction = MON
+			leave_faction = yes
 			add_political_power = -25
 			add_stability = -0.10
 			add_popularity = {
@@ -422,7 +422,7 @@ focus_tree = {
 		id = MON_Invite_tuva
 		icon = GFX_focus_SOV_restore_cossack_units
 		prerequisite = { focus = MON_Revive_the_Khanate }
-	#	mutually_exclusive = { focus = MON_exile_amar }
+	##	mutually_exclusive = { focus = MON_exile_amar }
 		x = 0
 		y = 2
 		relative_position_id = MON_Revive_the_Khanate
@@ -723,6 +723,9 @@ focus_tree = {
 			}
 			custom_effect_tooltip = 05_MON_economic_tt
 
+			set_variable = { mon_temp1 = 0}
+			set_variable = { mon_temp2 = 0}
+			set_variable = { mon_temp3 = 0}
 		}
 	}
 	focus = {
