@@ -5,7 +5,7 @@ ideas = {
 		
 		
 		neutral_nation = {
-			picture = generic_morale_bonus
+			picture = hol_aloof_neutrality
 			
 			allowed = {
 			    always = yes
@@ -23,18 +23,38 @@ ideas = {
 			    join_faction_tension = 999
 				recruitable_population = -1
 				recruitable_population_factor = -1
-				
 				justify_war_goal_time = 10000
 				enemy_justify_war_goal_time = 10000
 				conscription = -1
 				conscription_factor = -1
 				guarantee_cost = 10000
-				min_export = 10
 				drift_defence_factor = 999
 				ai_get_ally_desire_factor = -1000
+				
 			}
 		}
-		
+		horrible_industry = {
+			picture = POL_disjointed_industry
+			
+			allowed = {
+			    always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				line_change_production_efficiency_factor= -2
+				production_factory_efficiency_gain_factor = -2
+				production_factory_max_efficiency_factor = -2
+				industrial_capacity_factory = -2
+				industry_repair_factor = -2
+				
+			}
+		}
 		Grosse_Depression = {
 			picture = great_depression
 			

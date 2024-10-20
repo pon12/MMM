@@ -336,6 +336,10 @@ remove_ideas = home_of_the_free
 				set_variable={host = ROM.id}
 			}
 			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = FIN}}
+				set_variable={host = FIN.id}
+			}
+			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = HUN}}
 				set_variable={host = HUN.id}
 			}

@@ -53,19 +53,13 @@ on_actions = {
 						transfer_troops = yes
 					}
 				}
-				HOL = {
-				add_state_core = 6
-				add_state_core = 34
-				add_state_core = 8
+				
+				BEL = {
+					add_state_core = 8
 					annex_country = {
-						target = BEL
-						transfer_troops = yes
-					}
-					annex_country = {
-						target = LUX
-						transfer_troops = yes
-					}
-				}
+					target = LUX
+					transfer_troops = yes
+				}}
 				LIT = {
 				add_state_core = 190
 				  add_state_core = 809

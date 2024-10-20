@@ -1,4 +1,4 @@
-﻿l_german:
+﻿l_english:
  MICHI_neutrality: "Michis Österreich"
  MICHI_neutrality_ADJ: "Michis Österreich"
  MICHI_DEF: "Michis Österreich"
@@ -37,8 +37,13 @@
  Samsara_Vartinl: "Samsara Vartin"
  Samsara_Vartin: "Samsara Vartin"
 
+CHEAT13:0 "Add Horrible Industry"
+CHEAT14:0 "Remove Horrible Industry"
+horrible_industry:0 "Horrible Industry"
+horrible_industry_desc:0 "In theory the collectivisation of economy, that would mean that the workers of our nation would start administratin our own industry without landlords, what is more, wegave them guides and we even taught them how properly manage a factory. \nWhen the colectivization began, they took all the money and wasted it in alcohol...THEY HAVENT PRODUCED ANYTHING SINCE 1931\n\nYNur für Raufaser eingebaut, viel Spaß du ficker\n - Dein Pon!"
+
 continuous_mobilisation:0 "Mobilisation"
-subject_autonomy_mod2_tt:0 "Autonomy in subjects: G-1!"
+subject_autonomy_mod2_tt:0 "£GFX_autonomy_texticon  Autonomy in subjects: G-1!"
 
  01_MON_tt:0 "RJeder !gIndustrie Focus! Rwelchen du abschließt wird dir hier! Y2 Civilfabriken! Roder! G2 Militärfabriken! Rgeben abhängig davon welche! gFocuse! Rdu gemacht hast!!"
  02_MON_tt:0 "\nYBatbayar Battulga! gets RPurged! \n He Provides Following Effects as YArmy Advisor!: \n  OCavalry Attack! G+10%! \n  OCavalry Defence! G+10%!"
@@ -142,12 +147,12 @@ MON_Liberal_Policies:0 "Liberal Policies"
 MON_Economic_reforms:0 "Economic Reforms"
 MON_wiederwegnehmen:0 "Economic Reforms"
 dynamic_modifier_mongolia_ecnonomy:0 "Economic Reforms"
-01_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G-10%! YConsumer Goods Factor!\n"
+01_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G-10%! £GFX_consumer_goods_texticon YConsumer Goods Factor!\n"
 02_MON_economic_tt:0 "RThis YDecision! will appear again!"
-03_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G-15%! YConsumer Goods Factor!\n"
+03_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G-15%! £GFX_consumer_goods_texticon YConsumer Goods Factor!\n"
 05_MON_economic_tt:0 "\nGUnlock Decisions! to modify YEconomic Reforms Spirit!"
-06_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G+5%! YProduction Efficiency Cap!\n by G+5%! YProduction Efficiency Growth!\n"
-07_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G+10%! YMilitary Factory Construction Speed!\n by G+5%! YCivilian Factory Construction Speed!\n"
+06_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G+5%! £GFX_prod_eff_cap YProduction Efficiency Cap!\n by G+5%! £GFX_efficiency_growth_texticon YProduction Efficiency Growth!\n"
+07_MON_economic_tt:0 "Modify YEconomic Reforms! \n by G+10%! £GFX_construction_speed_milfactory_texticon YMilitary Factory Construction Speed!\n by G+5%!  £GFX_construction_speed_civfactory_texticon YCivilian Factory Construction Speed!\n"
 
 mon_economic_reforms:0 "Economic Reforms"
 mon_better_construction:0 "Focus on Construction"
@@ -157,3 +162,5 @@ mon_better_efficiency2:0 "Focus on Production"
 mon_lower_consumer_godds3:0 "Lower the Taxes"
 mon_lower_consumer_godds2:0 "Lower the Taxes"
 mon_lower_consumer_godds:0 "Lower the Taxes"
+
+mon_economic_reforms_desc:0 "Change the National Spirit YEconomic Reforms! here: \n\nCurrent YTax! Reforms: Y[?mon_temp1]!/3\nCurrent YProduction! Reforms: Y[?mon_temp2]!/2\nCurrent YConstruction! Reforms: Y[?mon_temp3]!/2 "

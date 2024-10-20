@@ -74,7 +74,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {has_game_rule = {
+				rule = historische_focuse
+				option = Hist_focus
+			}}
 		}
 		
 		bypass = {
@@ -858,7 +861,10 @@ focus_tree = {
 		}
 
 		available = {
-
+			NOT = {has_game_rule = {
+				rule = historische_focuse
+				option = Hist_focus
+			}}
 		}
 		
 		bypass = {

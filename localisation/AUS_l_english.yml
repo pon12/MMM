@@ -37,6 +37,11 @@
  Samsara_Vartinl: "Samsara Vartin"
  Samsara_Vartin: "Samsara Vartin"
 
+CHEAT13:0 "Add Horrible Industry"
+CHEAT14:0 "Remove Horrible Industry"
+horrible_industry:0 "Horrible Industry"
+horrible_industry_desc:0 "In theory the collectivisation of economy, that would mean that the workers of our nation would start administratin our own industry without landlords, what is more, wegave them guides and we even taught them how properly manage a factory. \nWhen the colectivization began, they took all the money and wasted it in alcohol...THEY HAVENT PRODUCED ANYTHING SINCE 1931\n\nYNur für Raufaser eingebaut, viel Spaß du ficker\n - Dein Pon!"
+
 continuous_mobilisation:0 "Mobilisation"
 subject_autonomy_mod2_tt:0 "£GFX_autonomy_texticon  Autonomy in subjects: G-1!"
 
