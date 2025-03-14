@@ -5,13 +5,15 @@ buildings = {
 	steel_mill = {
 		show_on_map = 1
 		base_cost = 8000
-		icon_frame = 17
+		icon_frame = 28
 		local_resources_steel = 10
 		local_resources_tungsten = 0
 		local_resources_chromium = 0
 		refinery = yes
-		max_level = 20
-		shares_slots = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 3
+		}
 		value = 5
 		infrastructure_construction_effect = yes
 	}
@@ -19,11 +21,13 @@ buildings = {
 	aluminum_mill = {
 		show_on_map = 1
 		base_cost = 8000
-		icon_frame = 18
+		icon_frame = 29
 		local_resources_aluminium = 10
 		refinery = yes
-		max_level = 20
-		shares_slots = yes
+		level_cap = {
+			shares_slots = yes
+			state_max = 3
+		}
 		value = 5
 		infrastructure_construction_effect = yes
 	}
@@ -31,10 +35,13 @@ buildings = {
 	rubber_refinery = {
 		show_on_map = 1
 		base_cost = 10000
-		icon_frame = 19
+		icon_frame = 30
 		local_resources_rubber = 8
 		refinery = yes
-		max_level = 3
+		level_cap = {
+			shares_slots = yes
+			state_max = 3
+		}
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes

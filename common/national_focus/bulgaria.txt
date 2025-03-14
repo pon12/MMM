@@ -651,13 +651,33 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
-				name = BUL_uranium_prospecting
-			    bonus = 1.0
-			    uses = 2
-			    category = nuclear
+			
+			IF = {
+				limit = {
+					NOT = {
+						has_tech = atomic_research
+					}
+				}
+				add_tech_bonus = {
+					name = BUL_uranium_prospecting
+				    bonus = 1.0
+				    uses = 1 # was 2
+				    category = nuclear
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.8
+				}
 			}
+			ELSE = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
+
 			add_ideas = BUL_buhovo_uranium_mines
+
 			if = { 
 				limit = {
 					any_allied_country = {
@@ -5436,6 +5456,10 @@ focus_tree = {
 		}
 
 		available = {
+			NOT = {has_game_rule = {
+				rule = historische_focuse
+				option = Hist_focus
+			}}
 			country_exists = ENG
 			NOT = { has_war_with = ENG }
 			ENG = { 
@@ -5457,10 +5481,6 @@ focus_tree = {
 					}
 				}
 			}
-			NOT = {has_game_rule = {
-				rule = historische_focuse
-				option = Hist_focus
-			}}
 		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -7332,6 +7352,10 @@ focus_tree = {
 		mutually_exclusive = { focus = BUL_join_the_tripartite_pact focus = BUL_join_the_allies focus = BUL_a_balkan_confederation }
 
 		available = {
+			NOT = {has_game_rule = {
+				rule = historische_focuse
+				option = Hist_focus
+			}}
 			OR = {
 				has_government = fascism
 				has_government = neutrality
@@ -7341,10 +7365,6 @@ focus_tree = {
 				has_war = no
 			}
 			is_subject = no
-			NOT = {has_game_rule = {
-				rule = historische_focuse
-				option = Hist_focus
-			}}
 		}
 		
 		completion_reward = {
@@ -8821,6 +8841,14 @@ focus_tree = {
 				}
 				77 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
 				add_state_core = 77
+			}
+			if = {
+				limit = {
+					has_full_control_of_state = 971
+					971 = { NOT = { is_core_of = ROOT } }
+				}
+				971 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
+				add_state_core = 971
 			}
 			custom_effect_tooltip = BUL_historical_states_tt
 

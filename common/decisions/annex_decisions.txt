@@ -10,8 +10,9 @@ operations = {
 				is_ai = yes
 				
 			}
+
 	        
-		    has_game_rule = {rule = historische_focuse option = hist_focus}
+		    has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			date > 1939.01.01
 		}
 		fire_only_once = yes
@@ -24,7 +25,7 @@ operations = {
 			tag = CAN
 			
 			
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			MEX
@@ -71,7 +72,7 @@ operations = {
 				
 			}
 	        
-		    has_game_rule = {rule = historische_focuse option = hist_focus}
+		    has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			
 		}
 		fire_only_once = yes
@@ -84,7 +85,7 @@ operations = {
 			tag = BRA
 			
 			
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			MEX
@@ -132,7 +133,7 @@ operations = {
 				
 			}
 	        
-		    has_game_rule = {rule = historische_focuse option = hist_focus}
+		    has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			
 		}
 		fire_only_once = yes
@@ -145,7 +146,7 @@ operations = {
 			tag = ROM
 			
 			
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			BUL
@@ -191,7 +192,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			date > 1939.01.01
 		}
 		fire_only_once = yes
@@ -201,7 +202,7 @@ operations = {
 		}
 		visible = {
 			tag = CAN
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			BRA
@@ -246,7 +247,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		fire_only_once = yes
 		cost = 0
@@ -255,7 +256,7 @@ operations = {
 		}
 		visible = {
 			tag = CAN
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			SAF
@@ -300,7 +301,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			AST = {
 				is_ai = yes
 				
@@ -313,7 +314,7 @@ operations = {
 		}
 		visible = {
 			tag = RAJ
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			NZL
@@ -357,7 +358,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		fire_only_once = yes
 		cost = 0
@@ -366,7 +367,7 @@ operations = {
 		}
 		visible = {
 			tag = AST
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			NZL
@@ -410,7 +411,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		fire_only_once = yes
 		cost = 0
@@ -419,7 +420,7 @@ operations = {
 		}
 		visible = {
 			tag = RAJ
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			AST
@@ -464,7 +465,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		fire_only_once = yes
 		cost = 0
@@ -473,7 +474,7 @@ operations = {
 		}
 		visible = {
 			tag = SOV
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			MON
@@ -518,7 +519,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		fire_only_once = yes
 		cost = 0
@@ -527,7 +528,7 @@ operations = {
 		}
 		visible = {
 			tag = SOV
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 		}
 		targets = {
 			TAN
@@ -573,7 +574,7 @@ operations = {
 				
 				
 			}
-		has_game_rule = {rule = historische_focuse option = hist_focus}
+		has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			NOT = {country_exists = CHI}
 		}
 		fire_only_once = yes
@@ -583,7 +584,7 @@ operations = {
 		}
 		visible = {
 			tag = JAP
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			
 		}
 		targets = {
@@ -632,7 +633,7 @@ operations = {
 				is_ai = yes
 				
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			
 		}
 		fire_only_once = yes
@@ -642,7 +643,7 @@ operations = {
 		}
 		visible = {
 			tag = JAP
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			
 		}
 		targets = {
@@ -686,7 +687,7 @@ operations = {
 			MEN = {
 				is_ai = yes
 			}
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			
 		}
 		fire_only_once = yes
@@ -696,7 +697,7 @@ operations = {
 		}
 		visible = {
 			tag = JAP
-			has_game_rule = {rule = historische_focuse option = hist_focus}
+			has_game_rule = {rule = annex_country_decisions option = decisions_zum_annektieren}
 			
 		}
 		targets = {

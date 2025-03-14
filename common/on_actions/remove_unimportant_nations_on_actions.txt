@@ -60,35 +60,35 @@ on_actions = {
 					target = LUX
 					transfer_troops = yes
 				}}
-				LIT = {
-				add_state_core = 190
-				  add_state_core = 809
-				  add_state_core = 808
-				   add_state_core = 810
-				   add_state_core = 12
-				    add_state_core = 13
-					 add_state_core = 811
-					 add_state_core = 812
-					 add_state_core = 813
-					 add_state_core = 191
-					annex_country = {
-						target = LAT
-						transfer_troops = no
-					}
-					annex_country = {
-						target = EST
-						transfer_troops = no
-					}
-				}
+			#	LIT = {
+			#	add_state_core = 190
+			#	  add_state_core = 809
+			#	  add_state_core = 808
+			#	   add_state_core = 810
+			#	   add_state_core = 12
+			#	    add_state_core = 13
+			#		 add_state_core = 811
+			#		 add_state_core = 812
+			#		 add_state_core = 813
+			#		 add_state_core = 191
+			#		annex_country = {
+			#			target = LAT
+			#			transfer_troops = no
+			#		}
+			#		annex_country = {
+			#			target = EST
+			#			transfer_troops = no
+			#		}
+			#	}
 				DEN = {annex_country = {target = ICE
 				transfer_troops = no}}	
 				NIX = { 
 				
 					
-					annex_country = {
-						target = SWI
-						transfer_troops = no
-					}
+				#	annex_country = {
+				#		target = SWI
+				#		transfer_troops = no
+				#	}
 					annex_country = {
 						target = URG
 						transfer_troops = no
@@ -186,10 +186,10 @@ on_actions = {
 						target = AFG
 						transfer_troops = no
 					}
-					annex_country = {
-						target = TUR
-						transfer_troops = no
-					}
+					#annex_country = {
+					#	target = TUR
+					#	transfer_troops = no
+					#}
 					annex_country = {
 						target = IRQ
 						transfer_troops = no

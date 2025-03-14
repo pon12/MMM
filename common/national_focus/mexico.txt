@@ -111,10 +111,7 @@ focus_tree = {
 		}
 
 		available = {
-			NOT = {has_game_rule = {
-				rule = historische_focuse
-				option = Hist_focus
-			}}
+			
 		}
 
 		bypass = {
@@ -885,10 +882,6 @@ focus_tree = {
 			NOT = {
 				has_global_flag = flag_mexico_cedillo_has_revolted
 			}
-			NOT = {has_game_rule = {
-				rule = historische_focuse
-				option = Hist_focus
-			}}
 		}
 
 		bypass = {
@@ -2845,6 +2838,7 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_industrial_concern
 			show_ideas_tooltip = MEX_escuela_de_ingeneria_electrica
+			custom_effect_tooltip = generic_skip_one_line_tt
 			add_tech_bonus = {
 				name = electronics
 				bonus = 1.0
@@ -6407,6 +6401,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -6485,6 +6480,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -6817,6 +6813,11 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_land
+				value = 0.5
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -6878,6 +6879,11 @@ focus_tree = {
 				uses = 1
 				category = air_doctrine
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
+			custom_effect_tooltip = generic_skip_one_line_tt
 			IF = {
 				limit = {
 					has_dlc = "Arms Against Tyranny"
@@ -6939,6 +6945,10 @@ focus_tree = {
 				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
 			}
 		}
 	}

@@ -199,6 +199,23 @@ historische_focuse = {
 	}
 	
 }
+annex_country_decisions = {
+	name = "KI Nationen Annektieren Erlauben"
+	group = "Host Rules"
+	icon = "GFX_volunteers"
+	default = {
+		name = Keine_decisions_zum_annektieren
+		text = "Keine Decisions zum Annektieren"
+		desc = "Spieler können nicht bestimmte KI nationen annektieren wie z.b. Canada -> SAF"
+	}
+
+	option = {
+		name = decisions_zum_annektieren
+		text = "Decisions zum Annektieren"
+		desc = "Spieler können bestimmte KI nationen annektieren wie z.b. Canada -> SAF"
+	}
+	
+}
 
 horst_host_country1 = {
 	name = "Michis Austria"

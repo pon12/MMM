@@ -1,0 +1,1110 @@
+gamble_cat = {
+	
+	gamble_d_1 = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			ITA = {has_war_with = ETH }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_1_1_tt
+					check_variable = {
+						gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_1_2_tt
+					check_variable = {
+						gamble_support_country = 1
+					}
+				}
+				
+				
+			}
+			
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#ITA = {has_war_with = ETH }
+			
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = ITA_eigene_PP_investment
+				value = 10
+				tooltip = ITA_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.ITA_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = gamble_support_country
+				value = 1
+			}
+		}
+	}
+	gamble_d_2 = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			ITA = {has_war_with = ETH }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_2_1_tt
+					check_variable = {
+						gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_2_2_tt
+					check_variable = {
+						gamble_support_country = 2
+					}
+				}
+				
+				
+			}
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			#ITA = {has_war_with = ETH }
+			
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = ETH_eigene_PP_investment
+				value = 10
+				tooltip = ETH_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.ETH_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = gamble_support_country
+				value = 2
+			}
+		}
+	}
+	gamble_timeout_mission = {
+		activation = {
+			ETH = {exists = yes}
+			ETH = {has_war_with = ITA}
+			NOT = { has_global_flag =  gamble_ETH_hat_gewonnen_flag}
+			NOT = { has_global_flag =  gamble_ITA_hat_gewonnen_flag}
+			or = {
+				has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_only_premade
+			} 
+				has_game_rule = {
+					rule = gambling_game_rule_1
+					option = gamble_rule_both
+			} 
+		}
+		}
+		available = {
+			OR = {
+			NOT = {ETH = {exists = yes}}
+			NOT = {ETH = {has_war_with = ITA}}
+			ETH = {is_puppet_of = ITA}
+			ETH_is_in_exile = yes 
+		}
+		#NOT = {ETH = { has_completed_focus = ETH_reach_out_to_the_italians }}
+#		OR = {
+#		ITA = { has_completed_focus = ITA_solid_progress }	
+#		ITA = { has_completed_focus = ITA_struggle_in_ethiopia }
+#		}
+	}
+		cancel_trigger = {
+			
+		
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		#war_with_on_timeout = SOV
+		days_mission_timeout = 250
+		selectable_mission = no
+		
+		complete_effect = {
+			set_variable = {
+				var = ITA_eigene_PP_investmentzsm
+				value = ITA_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = ITA_eigene_PP_investmentzsm
+				value = ITA_eigene_PP_investment
+			}
+			custom_effect_tooltip = gamble_ITA_wins
+			add_political_power = ITA_eigene_PP_investmentzsm
+		
+			set_global_flag = gamble_ITA_hat_gewonnen_flag
+		}
+		timeout_effect = {
+			set_variable = {
+				var = ETH_eigene_PP_investmentzsm
+				value = ETH_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = ETH_eigene_PP_investmentzsm
+				value = ETH_eigene_PP_investment
+			}
+#			add_to_variable = {
+#				var = ETH_eigene_PP_investmentzsm
+#				value = ETH_eigene_PP_investment
+#			}
+#			add_to_variable = {
+#				var = ETH_eigene_PP_investmentzsm
+#				value = ETH_eigene_PP_investment
+#			}
+			custom_effect_tooltip = gamble_ETH_wins
+			add_political_power = ETH_eigene_PP_investmentzsm
+
+			set_global_flag = gamble_ETH_hat_gewonnen_flag
+		}
+	}
+	
+
+	
+}
+# Spanish civil war
+gamble_cat_SPR = {
+
+	gamble_d_1_Spain = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Spanish_civil_war_available_tt
+				OR = {
+					SPR =  {has_war_with = D01} #republ
+					SPR =  {has_war_with = D02} #carl
+					SPR =  {has_war_with = D03} #anarch
+					D01 =  {has_war_with = SPR} 
+					D01 =  {has_war_with = D02}
+					D01 =  {has_war_with = D03} 
+					D02 =  {has_war_with = SPR} 
+					D02 =  {has_war_with = D01}
+					D02 =  {has_war_with = D03} 
+					D03 =  {has_war_with = SPR} 
+					D03 =  {has_war_with = D02}
+					D03 =  {has_war_with = D01} 
+					}
+			}
+			SPR = {exists = yes }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_1_tt
+					check_variable = {
+						SPR_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_2_tt
+					check_variable = {
+						SPR_gamble_support_country = 1
+					}
+				}
+				
+				
+			}
+			
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				SPR =  {has_war_with = D01} #republ
+				SPR =  {has_war_with = D02} #carl
+				SPR =  {has_war_with = D03} #anarch
+				D01 =  {has_war_with = SPR} 
+				D01 =  {has_war_with = D02}
+				D01 =  {has_war_with = D03} 
+				D02 =  {has_war_with = SPR} 
+				D02 =  {has_war_with = D01}
+				D02 =  {has_war_with = D03} 
+				D03 =  {has_war_with = SPR} 
+				D03 =  {has_war_with = D02}
+				D03 =  {has_war_with = D01} 
+				}
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = SPR_eigene_PP_investment
+				value = 10
+				tooltip = SPR_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.SPR_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = SPR_gamble_support_country
+				value = 1
+			}
+		}
+	}
+	gamble_d_2_Spain = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Spanish_civil_war_available_tt
+				OR = {
+					SPR =  {has_war_with = D01} #republ
+					SPR =  {has_war_with = D02} #carl
+					SPR =  {has_war_with = D03} #anarch
+					D01 =  {has_war_with = SPR} 
+					D01 =  {has_war_with = D02}
+					D01 =  {has_war_with = D03} 
+					D02 =  {has_war_with = SPR} 
+					D02 =  {has_war_with = D01}
+					D02 =  {has_war_with = D03} 
+					D03 =  {has_war_with = SPR} 
+					D03 =  {has_war_with = D02}
+					D03 =  {has_war_with = D01} 
+					}
+			}
+			D01 = {exists = yes }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_1_tt
+					check_variable = {
+						SPR_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_3_tt
+					check_variable = {
+						SPR_gamble_support_country = 2
+					}
+				}
+				
+				
+			}
+			
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				SPR =  {has_war_with = D01} #republ
+				SPR =  {has_war_with = D02} #carl
+				SPR =  {has_war_with = D03} #anarch
+				D01 =  {has_war_with = SPR} 
+				D01 =  {has_war_with = D02}
+				D01 =  {has_war_with = D03} 
+				D02 =  {has_war_with = SPR} 
+				D02 =  {has_war_with = D01}
+				D02 =  {has_war_with = D03} 
+				D03 =  {has_war_with = SPR} 
+				D03 =  {has_war_with = D02}
+				D03 =  {has_war_with = D01} 
+				}
+			
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = D01_eigene_PP_investment
+				value = 10
+				tooltip = D01_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.D01_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = SPR_gamble_support_country
+				value = 2
+			}
+		}
+	}
+
+
+	gamble_d_3_Spain = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Spanish_civil_war_available_tt
+				OR = {
+					SPR =  {has_war_with = D01} #republ
+					SPR =  {has_war_with = D02} #carl
+					SPR =  {has_war_with = D03} #anarch
+					D01 =  {has_war_with = SPR} 
+					D01 =  {has_war_with = D02}
+					D01 =  {has_war_with = D03} 
+					D02 =  {has_war_with = SPR} 
+					D02 =  {has_war_with = D01}
+					D02 =  {has_war_with = D03} 
+					D03 =  {has_war_with = SPR} 
+					D03 =  {has_war_with = D02}
+					D03 =  {has_war_with = D01} 
+					}
+			}
+			D02 = {exists = yes }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_1_tt
+					check_variable = {
+						SPR_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_4_tt
+					check_variable = {
+						SPR_gamble_support_country = 3
+					}
+				}
+				
+				
+			}
+			
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				SPR =  {has_war_with = D01} #republ
+				SPR =  {has_war_with = D02} #carl
+				SPR =  {has_war_with = D03} #anarch
+				D01 =  {has_war_with = SPR} 
+				D01 =  {has_war_with = D02}
+				D01 =  {has_war_with = D03} 
+				D02 =  {has_war_with = SPR} 
+				D02 =  {has_war_with = D01}
+				D02 =  {has_war_with = D03} 
+				D03 =  {has_war_with = SPR} 
+				D03 =  {has_war_with = D02}
+				D03 =  {has_war_with = D01} 
+				}
+			
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = D02_eigene_PP_investment
+				value = 10
+				tooltip = D02_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.D02_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = SPR_gamble_support_country
+				value = 3
+			}
+		}
+	}
+
+	gamble_d_4_Spain = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Spanish_civil_war_available_tt
+				OR = {
+					SPR =  {has_war_with = D01} #republ
+					SPR =  {has_war_with = D02} #carl
+					SPR =  {has_war_with = D03} #anarch
+					D01 =  {has_war_with = SPR} 
+					D01 =  {has_war_with = D02}
+					D01 =  {has_war_with = D03} 
+					D02 =  {has_war_with = SPR} 
+					D02 =  {has_war_with = D01}
+					D02 =  {has_war_with = D03} 
+					D03 =  {has_war_with = SPR} 
+					D03 =  {has_war_with = D02}
+					D03 =  {has_war_with = D01} 
+					}
+			}
+			D03 = {exists = yes }
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_1_tt
+					check_variable = {
+						SPR_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_SPR_1_5_tt
+					check_variable = {
+						SPR_gamble_support_country = 4
+					}
+				}
+			}
+			
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			OR = {
+				SPR =  {has_war_with = D01} #republ
+				SPR =  {has_war_with = D02} #carl
+				SPR =  {has_war_with = D03} #anarch
+				D01 =  {has_war_with = SPR} 
+				D01 =  {has_war_with = D02}
+				D01 =  {has_war_with = D03} 
+				D02 =  {has_war_with = SPR} 
+				D02 =  {has_war_with = D01}
+				D02 =  {has_war_with = D03} 
+				D03 =  {has_war_with = SPR} 
+				D03 =  {has_war_with = D02}
+				D03 =  {has_war_with = D01} 
+				}
+			
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = D03_eigene_PP_investment
+				value = 10
+				tooltip = D03_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.D03_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = SPR_gamble_support_country
+				value = 4
+			}
+		}
+	}
+	SPR_gamble_timeout_mission = {
+		activation = {
+			OR = {
+				SPR =  {has_war_with = D01} #republ
+				SPR =  {has_war_with = D02} #carl
+				SPR =  {has_war_with = D03} #anarch
+				D01 =  {has_war_with = SPR} 
+				D01 =  {has_war_with = D02}
+				D01 =  {has_war_with = D03} 
+				D02 =  {has_war_with = SPR} 
+				D02 =  {has_war_with = D01}
+				D02 =  {has_war_with = D03} 
+				D03 =  {has_war_with = SPR} 
+				D03 =  {has_war_with = D02}
+				D03 =  {has_war_with = D01} 
+				}
+			NOT = { has_global_flag =  gamble_SPR_vorbei}
+			or = {
+				has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_only_premade
+			} 
+				has_game_rule = {
+					rule = gambling_game_rule_1
+					option = gamble_rule_both
+			} 
+		}
+
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Spanish_civil_war_end_tt
+			NOT = {SPR =  {has_war_with = D01}} #republ
+			NOT = {SPR =  {has_war_with = D02}} #carl
+			NOT = {SPR =  {has_war_with = D03}} #anarch
+			NOT = {D01 =  {has_war_with = SPR}} 
+			NOT = {D01 =  {has_war_with = D02}}
+			NOT = {D01 =  {has_war_with = D03}} 
+			NOT = {D02 =  {has_war_with = SPR}} 
+			NOT = {D02 =  {has_war_with = D01}}
+			NOT = {D02 =  {has_war_with = D03}} 
+			NOT = {D03 =  {has_war_with = SPR}} 
+			NOT = {D03 =  {has_war_with = D02}}
+			NOT = {D03 =  {has_war_with = D01}} 
+	}}
+		cancel_trigger = {
+			
+		
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		#war_with_on_timeout = SOV
+		days_mission_timeout = 1500
+		selectable_mission = no
+		
+		complete_effect = {
+			if = {
+				limit = {SPR = {exists = yes}}
+			set_variable = {
+				var = SPR_eigene_PP_investmentzsm
+				value = SPR_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = SPR_eigene_PP_investmentzsm
+				value = SPR_eigene_PP_investment
+			}
+			custom_effect_tooltip = gamble_SPR_wins
+			add_political_power = SPR_eigene_PP_investmentzsm
+		}
+		if = {
+			limit = {D01 = {exists = yes}}
+		set_variable = {
+			var = D01_eigene_PP_investmentzsm
+			value = D01_eigene_PP_investment
+		}
+		add_to_variable = {
+			var = D01_eigene_PP_investmentzsm
+			value = D01_eigene_PP_investment
+		}
+		custom_effect_tooltip = gamble_D01_wins
+		add_political_power = D01_eigene_PP_investmentzsm
+	}
+	if = {
+		limit = {D02 = {exists = yes}}
+	set_variable = {
+		var = D02_eigene_PP_investmentzsm
+		value = D02_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = D02_eigene_PP_investmentzsm
+		value = D02_eigene_PP_investment
+	}
+	custom_effect_tooltip = gamble_D02_wins
+	add_political_power = D02_eigene_PP_investmentzsm
+	set_global_flag = gamble_SPR_vorbei
+}
+if = {
+	limit = {D03 = {exists = yes}}
+set_variable = {
+	var = D03_eigene_PP_investmentzsm
+	value = D03_eigene_PP_investment
+}
+add_to_variable = {
+	var = D03_eigene_PP_investmentzsm
+	value = D03_eigene_PP_investment
+}
+custom_effect_tooltip = gamble_D03_wins
+add_political_power = D03_eigene_PP_investmentzsm
+}
+
+		}
+		timeout_effect = {
+			
+			custom_effect_tooltip = gamble_return_the_pp
+			if = {
+				limit = {SPR_eigene_PP_investment > 1}
+			add_political_power = SPR_eigene_PP_investment
+		}
+		if = {
+			limit = {D01_eigene_PP_investment > 1}
+		add_political_power = D01_eigene_PP_investment
+	}
+	if = {
+		limit = {D02_eigene_PP_investment > 1}
+	add_political_power = D02_eigene_PP_investment
+}
+if = {
+	limit = {D03_eigene_PP_investment > 1}
+add_political_power = D03_eigene_PP_investment
+
+set_global_flag = gamble_SPR_vorbei
+}
+			
+		}
+	}
+
+}
+
+
+
+# China
+
+gamble_cat_CHINA = {
+	
+	gamble_d_CHINA_1 = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			CHI = {has_war_with = JAP }
+			
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_CHINA_1_tt
+					check_variable = {
+						CHINA_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_CHINA_2_tt
+					check_variable = {
+						CHINA_gamble_support_country = 1
+					}
+				}
+				
+				
+			}
+			
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			CHI = {has_war_with = JAP }
+			NOT = {has_global_flag = gamble_JAP_hat_gewonnen_flag }
+			NOT = {has_global_flag = gamble_CHI_hat_gewonnen_flag }
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = JAP_eigene_PP_investment
+				value = 10
+				tooltip = JAP_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.JAP_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = CHINA_gamble_support_country
+				value = 1
+			}
+		}
+	}
+	gamble_d_CHINA_2 = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			CHI = {has_war_with = JAP }
+			
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_CHINA_1_tt
+					check_variable = {
+						CHINA_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_CHINA_3_tt
+					check_variable = {
+						CHINA_gamble_support_country = 2
+					}
+				}
+				
+				
+			}
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			CHI = {has_war_with = JAP }
+			NOT = {has_global_flag = gamble_JAP_hat_gewonnen_flag }
+			NOT = {has_global_flag = gamble_CHI_hat_gewonnen_flag }
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = CHI_eigene_PP_investment
+				value = 10
+				tooltip = CHI_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.CHI_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = CHINA_gamble_support_country
+				value = 2
+			}
+		}
+	}
+	CHINA_gamble_timeout_mission = {
+		activation = {
+			CHI = {has_war_with = JAP}
+			NOT = { has_global_flag =  gamble_CHI_hat_gewonnen_flag}
+			NOT = { has_global_flag =  gamble_JAP_hat_gewonnen_flag}
+			or = {
+				has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_only_premade
+			} 
+				has_game_rule = {
+					rule = gambling_game_rule_1
+					option = gamble_rule_both
+			} 
+		}
+		}
+		available = {
+			OR = {
+			NOT = {CHI = {has_war_with = JAP}}
+			CHI = {exists = no}
+			CHI = {is_puppet_of = JAP}
+			CHI = { is_exiled_in = ENG}
+			CHI = { is_exiled_in = USA}
+		}
+		
+#		OR = {
+#		ITA = { has_completed_focus = ITA_solid_progress }	
+#		ITA = { has_completed_focus = ITA_struggle_in_ethiopia }
+#		}
+	}
+		cancel_trigger = {
+			CHI = {exists = yes}
+			NOT = {CHI = {is_puppet_of = JAP}}
+			CHI = {all_owned_state = {is_owned_and_controlled_by = CHI}}
+			NOT = {525 = { is_owned_and_controlled_by = JAP }}		
+			NOT = {527 = { is_owned_and_controlled_by = JAP }}	
+			NOT = {609 = { is_owned_and_controlled_by = JAP }}	
+			NOT = {745 = { is_owned_and_controlled_by = JAP }}	
+		}
+		icon = mission_icon     # For GFX_decision_mission_icon
+		is_good = no
+		#war_with_on_timeout = SOV
+		days_mission_timeout = 2000
+		selectable_mission = no
+		
+		complete_effect = {
+			set_variable = {
+				var = JAP_eigene_PP_investmentzsm
+				value = JAP_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = JAP_eigene_PP_investmentzsm
+				value = JAP_eigene_PP_investment
+			}
+			custom_effect_tooltip = gamble_JAP_wins
+			add_political_power = JAP_eigene_PP_investmentzsm
+		
+			set_global_flag = gamble_JAP_hat_gewonnen_flag
+		}
+		timeout_effect = {
+			set_variable = {
+				var = CHI_eigene_PP_investmentzsm
+				value = CHI_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = CHI_eigene_PP_investmentzsm
+				value = CHI_eigene_PP_investment
+			}
+#			add_to_variable = {
+#				var = ETH_eigene_PP_investmentzsm
+#				value = ETH_eigene_PP_investment
+#			}
+#			add_to_variable = {
+#				var = ETH_eigene_PP_investmentzsm
+#				value = ETH_eigene_PP_investment
+#			}
+			custom_effect_tooltip = gamble_CHI_wins
+			add_political_power = CHI_eigene_PP_investmentzsm
+
+			set_global_flag = gamble_CHI_hat_gewonnen_flag
+		}
+		cancel_effect = {
+			set_variable = {
+				var = CHI_eigene_PP_investmentzsm
+				value = CHI_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = CHI_eigene_PP_investmentzsm
+				value = CHI_eigene_PP_investment
+			}
+#			add_to_variable = {
+#				var = ETH_eigene_PP_investmentzsm
+#				value = ETH_eigene_PP_investment
+#			}
+#			add_to_variable = {
+#				var = ETH_eigene_PP_investmentzsm
+#				value = ETH_eigene_PP_investment
+#			}
+			custom_effect_tooltip = gamble_CHI_wins
+			add_political_power = CHI_eigene_PP_investmentzsm
+
+			set_global_flag = gamble_CHI_hat_gewonnen_flag
+		}
+	}
+	
+
+	
+}
+
+
+
+
+
+#WINTER
+
+
+gamble_cat_WINTER = {
+	
+	gamble_d_WINTER_1 = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			SOV = {has_war_with = FIN }
+			
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_WINTER_1_tt
+					check_variable = {
+						WINTER_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_WINTER_2_tt
+					check_variable = {
+						WINTER_gamble_support_country = 1
+					}
+				}
+				
+				
+			}
+			
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			SOV = {has_war_with = FIN }
+			NOT = {has_global_flag = gamble_SOV_hat_gewonnen_flag }
+			NOT = {has_global_flag = gamble_FIN_hat_gewonnen_flag }
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = SOV_eigene_PP_investment
+				value = 10
+				tooltip = SOV_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.SOV_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = WINTER_gamble_support_country
+				value = 1
+			}
+		}
+	}
+	gamble_d_WINTER_2 = {
+		icon = generic_operation
+		allowed = {
+			always = yes
+		}
+		available = {
+			SOV = {has_war_with = FIN }
+			
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = gamble_WINTER_1_tt
+					check_variable = {
+						WINTER_gamble_support_country = 0
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = gamble_WINTER_3_tt
+					check_variable = {
+						WINTER_gamble_support_country = 2
+					}
+				}
+				
+				
+			}
+		}
+
+		fire_only_once = no
+		cost = 10
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			SOV = {has_war_with = FIN }
+			NOT = {has_global_flag = gamble_SOV_hat_gewonnen_flag }
+			NOT = {has_global_flag = gamble_FIN_hat_gewonnen_flag }
+		}
+		#targets = {
+			
+		#}
+		complete_effect = {
+			add_to_variable = {
+				var = FIN_eigene_PP_investment
+				value = 10
+				tooltip = FIN_eigene_PP_investment_tt
+			}
+			add_to_variable = {
+				var = global.FIN_global_PP_investment
+				value = 10
+				#tooltip = ITA_eigene_PP_investment_tt
+			}
+			set_variable = {
+				var = WINTER_gamble_support_country
+				value = 2
+			}
+		}
+	}
+	WINTER_gamble_timeout_mission = {
+		activation = {
+			SOV = {has_war_with = FIN}
+			NOT = { has_global_flag =  gamble_FIN_hat_gewonnen_flag}
+			NOT = { has_global_flag =  gamble_SOV_hat_gewonnen_flag}
+			or = {
+				has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_only_premade
+			} 
+				has_game_rule = {
+					rule = gambling_game_rule_1
+					option = gamble_rule_both
+			} 
+		}
+		}
+		available = {
+			NOT = {SOV = {has_war_with = FIN}}
+			OR = {
+			
+			FIN = {exists = no}
+			FIN = {is_puppet_of = SOV}
+			146 = { is_owned_and_controlled_by = SOV }
+		}
+		
+	}
+		cancel_trigger = {
+			NOT = {SOV = {has_war_with = FIN}}
+			FIN = {is_subject = no}
+			146 = { is_owned_and_controlled_by = FIN }
+			OR = {
+				195 = { is_owned_and_controlled_by = FIN }
+				213 = { is_owned_and_controlled_by = FIN }
+				215 = { is_owned_and_controlled_by = FIN }
+				216 = { is_owned_and_controlled_by = FIN }
+			}
+		}
+		icon = mission_icon     
+		is_good = no
+		days_mission_timeout = 200
+		selectable_mission = no
+		
+		complete_effect = {
+			set_variable = {
+				var = SOV_eigene_PP_investmentzsm
+				value = SOV_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = SOV_eigene_PP_investmentzsm
+				value = SOV_eigene_PP_investment
+			}
+			custom_effect_tooltip = gamble_SOV_wins
+			add_political_power = SOV_eigene_PP_investmentzsm
+		
+			set_global_flag = gamble_SOV_hat_gewonnen_flag
+		}
+		timeout_effect = {
+			set_variable = {
+				var = FIN_eigene_PP_investmentzsm
+				value = FIN_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = FIN_eigene_PP_investmentzsm
+				value = FIN_eigene_PP_investment
+			}
+			custom_effect_tooltip = gamble_FIN_wins
+			add_political_power = FIN_eigene_PP_investmentzsm
+
+			set_global_flag = gamble_FIN_hat_gewonnen_flag
+		}
+		cancel_effect = {
+			set_variable = {
+				var = FIN_eigene_PP_investmentzsm
+				value = FIN_eigene_PP_investment
+			}
+			add_to_variable = {
+				var = FIN_eigene_PP_investmentzsm
+				value = FIN_eigene_PP_investment
+			}
+			
+			custom_effect_tooltip = gamble_FIN_wins
+			add_political_power = FIN_eigene_PP_investmentzsm
+
+			set_global_flag = gamble_FIN_hat_gewonnen_flag
+		}
+	}
+}

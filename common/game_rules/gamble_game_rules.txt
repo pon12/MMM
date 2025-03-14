@@ -1,0 +1,28 @@
+
+gambling_game_rule_1 = {
+	name = "Gambling System in Use"
+	group = "Gambling_System"
+	icon = "GFX_volunteers"
+	default = {
+		name = gamble_rule_only_dynamic
+		text = "Only Dynamic"
+		desc = "Players can only bet in Dynamic Wars"
+	}
+
+	option = {
+		name = gamble_rule_only_premade
+		text = "Only Premade"
+		desc = "Players can only bet in Premade (Ethiopia, Spain CW, Sino-japanese, Winter War) Wars"
+	}
+	option = {
+		name = gamble_rule_both
+		text = "Both"
+		desc = "Players can bet in both bettin Systems (Not recommended)"
+	}
+	option = {
+		name = gamble_rule_none
+		text = "None"
+		desc = "Why did you even download my mod if you are not using it ?"
+	}
+	
+}

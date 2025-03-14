@@ -49,16 +49,22 @@ on_actions = {
 				long_name = Zuschauer
 				name = Zuschauer
 			}
-			add_popularity = {
-				ideology = neutrality
-				popularity = 1
-			}
+			
 			set_cosmetic_tag = MICHI
 			}
 			}
 			}
 			
+			effect = {
+			if = {
+			JAP = { set_power_balance = {
+				id = JAP_power_balance
+			}
+		JAP = { remove_ideas = JAP_interservice_rivalry_balanced
+		}
 			
+			}
+			}}
 			
 			
 			
@@ -295,7 +301,7 @@ remove_ideas = home_of_the_free
 			CAN = {transfer_state = 463 add_state_core = 463}
 			NEE = {
 			add_timed_idea = { idea = Grosse_Depression  days = 760 }
-			
+			add_ideas = NEUENG_British_Influnence
 			transfer_state = 357
 			transfer_state = 358
 			transfer_state = 359

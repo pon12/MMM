@@ -164,3 +164,14 @@ mon_lower_consumer_godds2:0 "Lower the Taxes"
 mon_lower_consumer_godds:0 "Lower the Taxes"
 
 mon_economic_reforms_desc:0 "Change the National Spirit YEconomic Reforms! here: \n\nCurrent YTax! Reforms: Y[?mon_temp1]!/3\nCurrent YProduction! Reforms: Y[?mon_temp2]!/2\nCurrent YConstruction! Reforms: Y[?mon_temp3]!/2 "
+
+
+JAP_power_balance:0 "Army-Navy Rivalry"
+JAP_Navy_side:0 "Navy Side"
+JAP_Army_side:0 "Army Side" 
+JAP_low_trust_range:0 "Navy Strengthened"
+JAP_very_low_trust_range:0 "Navy Dominant"
+JAP_medium_trust_range:0 "Balanced"
+JAP_high_trust_range:0 "Army Strengthened"
+JAP_very_high_trust_range:0 "Army Dominant"
+NEUENG_British_Influnence:0 "British Influence"

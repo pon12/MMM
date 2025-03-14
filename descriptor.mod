@@ -7,5 +7,5 @@ tags={
 	"Utilities"
 }
 name="M3: Maiers Multiplayer Mod"
-supported_version="1.14.10"
+supported_version="1.15.4"
 remote_file_id="3157316935"

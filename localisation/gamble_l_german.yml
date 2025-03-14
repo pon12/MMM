@@ -1,0 +1,112 @@
+﻿l_german:
+gamble_cat:0 "YItalienisch-Äthiopischer Krieg!"
+gamble_cat_desc:0 "Aktuelle Kriegssituation: \n[ITA.GetNameWithFlag]: R[?ITA.casualties]! YVerluste!\n[ETH.GetNameWithFlag]: R[?ETH.casualties]! Y Verluste !\n\n\n[ITA.GetNameWithFlag]: [?global.ITA_global_PP_investment] (Y[?ITA_eigene_PP_investment]!)\n\n[ETH.GetNameWithFlag]: [?global.ETH_global_PP_investment] (Y[?ETH_eigene_PP_investment]!)\n\n\nDu Unterstützt: [gamble_support_country_1] \n\nDu hast £GFX_pol_power Y[?political_power]! Political Power zum verwetten."
+gamble_d_1:0 "10 PP auf [ITA.GetNameWithFlag]"
+gamble_d_2:0 "10 PP auf [ETH.GetNameWithFlag]"
+ETH_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Political Power! auf [ETH.GetNameWithFlag]\n\n"
+ITA_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Political Power! auf [ITA.GetNameWithFlag]\n\n"
+Test0:0 "Niemand"
+Test1:0 "[ITA.GetNameWithFlag]"
+Test2:0 "[ETH.GetNameWithFlag]"
+gamble_support_country_1:0 "[gamble_support_country_1]"
+gamble_1_1_tt:0 "Noch nicht gesetzt"
+gamble_1_2_tt:0 "Auf  [ITA.GetNameWithFlag] gesetzt"
+gamble_2_1_tt:0 "Noch nicht gesetzt"
+gamble_2_2_tt:0 "Auf  [ETH.GetNameWithFlag] gesetzt"
+
+gamble_ITA_wins:0 "Y[ITA.GetNameWithFlag]! gewinnt und alle die hierrauf gewettet haben bekommen das YDoppelte! Ihres einsatzes zurück."
+gamble_ETH_wins:0 "Y[ETH.GetNameWithFlag]! gewinnt und alle die hierrauf gewettet haben bekommen das YDoppelte! Ihres einsatzes zurück."
+gamble_timeout_mission:0 "Ergebniss"
+
+#Spanien
+Spanish_civil_war_available_tt:0 "Der Spanische Bürgerkrieg ist im Gange"
+gamble_cat_SPR:0 "YSpanischer Bürgerkrieg!"
+gamble_cat_SPR_desc:0 "Aktuelle Kriegssituation: \n[SPR.GetNameWithFlag]: R[?SPR.casualties]! YVerluste!\n[D01.GetNameWithFlag]: R[?D01.casualties]! Y Verluste  !\n[D02.GetNameWithFlag]: R[?D02.casualties]! Y Verluste  !\n[D03.GetNameWithFlag]: R[?D03.casualties]! Y Verluste  !\n\n\n[SPR.GetNameWithFlag]: [?global.SPR_global_PP_investment] (Y[?SPR_eigene_PP_investment]!)\n[D01.GetNameWithFlag]: [?global.D01_global_PP_investment] (Y[?D01_eigene_PP_investment]!)\n[D02.GetNameWithFlag]: [?global.D02_global_PP_investment] (Y[?D02_eigene_PP_investment]!)\n[D03.GetNameWithFlag]: [?global.D03_global_PP_investment] (Y[?D03_eigene_PP_investment]!)\n\n\nDu unterstützt: [gamble_support_country_2] \n\nDu hast £GFX_pol_power Y[?political_power]! Political Power zum Wetten."
+gamble_d_1_Spain:0 "10 PP auf [SPR.GetNameWithFlag]"
+gamble_d_2_Spain:0 "10 PP auf [D01.GetNameWithFlag]"
+gamble_d_3_Spain:0 "10 PP auf [D02.GetNameWithFlag]"
+gamble_d_4_Spain:0 "10 PP auf [D03.GetNameWithFlag]"
+
+SPR_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Politische Macht! auf [SPR.GetNameWithFlag]\n\n"
+D01_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Politische Macht! auf [D01.GetNameWithFlag]\n\n"
+D02_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Politische Macht! auf [D02.GetNameWithFlag]\n\n"
+D03_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Politische Macht! auf [D03.GetNameWithFlag]\n\n"
+
+gamble_SPR_1_1_tt:0 "Noch keine Wette platziert"
+gamble_SPR_1_2_tt:0 "Wette platziert auf [SPR.GetNameWithFlag]"
+gamble_SPR_1_3_tt:0 "Wette platziert auf [D01.GetNameWithFlag]"
+gamble_SPR_1_4_tt:0 "Wette platziert auf [D02.GetNameWithFlag]"
+gamble_SPR_1_5_tt:0 "Wette platziert auf [D03.GetNameWithFlag]"
+
+gamble_support_country_2:0 "[gamble_support_country_2]"
+SPR_slc_1:0 "[SPR.GetNameWithFlag]"
+SPR_slc_2:0 "[D01.GetNameWithFlag]"
+SPR_slc_3:0 "[D02.GetNameWithFlag]1"
+SPR_slc_4:0 "[D03.GetNameWithFlag]"
+
+Spanish_civil_war_end_tt:0 "Der YSpanische Bürgerkrieg! ist beendet"
+gamble_return_the_pp:0 "Wenn der Bürgerkrieg nicht beendet ist, wenn die Zeit abläuft, erhält jeder seine investierte £GFX_pol_power YPolitische Macht! zurück."
+
+gamble_SPR_wins:0 "Y[SPR.GetNameWithFlag]! gewinnt, und jeder, der darauf gewettet hat, erhält Ydoppelt! seinen Einsatz zurück."
+gamble_D01_wins:0 "Y[D01.GetNameWithFlag]! gewinnt, und jeder, der darauf gewettet hat, erhält Ydoppelt! seinen Einsatz zurück."
+gamble_D02_wins:0 "Y[D02.GetNameWithFlag]! gewinnt, und jeder, der darauf gewettet hat, erhält Ydoppelt! seinen Einsatz zurück."
+gamble_D03_wins:0 "Y[D03.GetNameWithFlag]! gewinnt, und jeder, der darauf gewettet hat, erhält Ydoppelt! seinen Einsatz zurück."
+
+SPR_gamble_timeout_mission:0 "Ergebnis"
+
+
+#China
+# [JAP.GetFlag]Greater East-Asian Co-Prosperity Sphere [CHI.GetFlag]Chinese United Front
+gamble_cat_CHINA:0 "YZweiter Japanisch-Chinesischer Krieg!"
+gamble_cat_CHINA_desc:0 "Aktuelle Kriegssituation: \n[JAP.GetFlag]Großostasiatische Wohlstandssphäre: R[?JAP.casualties]! YVerluste!\n[CHI.GetFlag]Chinesische Einheitsfront: R[?CHI.casualties]! YVerluste!\n\n\n[JAP.GetFlag]Großostasiatische Wohlstandssphäre: [?global.JAP_global_PP_investment] (Y[?JAP_eigene_PP_investment]!)\n\n[CHI.GetFlag]Chinesische Einheitsfront: [?global.CHI_global_PP_investment] (Y[?CHI_eigene_PP_investment]!)\n\n\nDu unterstützt: [gamble_support_country_3] \n\nDu hast £GFX_pol_power Y[?political_power]! Political Power zum Wetten. "
+gamble_d_CHINA_1:0 "10 PP auf [JAP.GetFlag]Großostasiatische Wohlstandssphäre"
+gamble_d_CHINA_2:0 "10 PP auf [CHI.GetFlag]Chinesische Einheitsfront"
+CHINA_gamble_timeout_mission:0 "Ergebnis"
+
+gamble_CHINA_1_tt:0 "Noch keine Wette platziert"
+gamble_CHINA_2_tt:0 "Wette auf [JAP.GetFlag]Großostasiatische Wohlstandssphäre platziert"
+gamble_CHINA_3_tt:0 "Wette auf [CHI.GetFlag]Chinesische Einheitsfront platziert"
+
+JAP_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Politische Macht! auf [JAP.GetFlag]Großostasiatische Wohlstandssphäre\n\n"
+CHI_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Politische Macht! auf [CHI.GetFlag]Chinesische Einheitsfront\n\n"
+
+gamble_JAP_wins:0 "Y[JAP.GetFlag]Großostasiatische Wohlstandssphäre! gewinnt, und alle, die darauf gesetzt haben, erhalten das YDoppelte! ihres Einsatzes zurück."
+gamble_CHI_wins:0 "Y[CHI.GetFlag]Chinesische Einheitsfront! gewinnt, und alle, die darauf gesetzt haben, erhalten das YDoppelte! ihres Einsatzes zurück."
+
+#WINTER
+gamble_cat_WINTER:0 "YWinterkrieg!"
+gamble_cat_WINTER_desc:0 "Aktuelle Kriegssituation: \n[SOV.GetNameWithFlag]: R[?SOV.casualties]! YVerluste!\n[FIN.GetNameWithFlag]: R[?FIN.casualties]! Y Verluste !\n\n\n[SOV.GetNameWithFlag]: [?global.SOV_global_PP_investment] (Y[?SOV_eigene_PP_investment]!)\n\n[FIN.GetNameWithFlag]: [?global.FIN_global_PP_investment] (Y[?FIN_eigene_PP_investment]!)\n\n\nDu unterstützt: [gamble_support_country_4] \n\nDu hast £GFX_pol_power Y[?political_power]! Political Power zum Wetten."
+
+gamble_d_WINTER_1:0 "10 PP auf [SOV.GetNameWithFlag]"
+gamble_d_WINTER_2:0 "10 PP auf [FIN.GetNameWithFlag]"
+WINTER_gamble_timeout_mission:0 "Ergebnis"
+
+gamble_WINTER_1_tt:0 "Noch keine Wette platziert"
+gamble_WINTER_2_tt:0 "Wette auf [SOV.GetNameWithFlag] platziert"
+gamble_WINTER_3_tt:0 "Wette auf [FIN.GetNameWithFlag] platziert"
+
+SOV_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Political Power! auf [SOV.GetNameWithFlag]\n\n"
+FIN_eigene_PP_investment_tt:0 "Setze £GFX_pol_power Y10 Political Power! auf [FIN.GetNameWithFlag]\n\n"
+
+gamble_SOV_wins:0 "Y[SOV.GetNameWithFlag]! gewinnt, und alle, die darauf gesetzt haben, erhalten das YDoppelte! ihres Einsatzes zurück."
+gamble_FIN_wins:0 "Y[FIN.GetNameWithFlag]! gewinnt, und alle, die darauf gesetzt haben, erhalten das YDoppelte! ihres Einsatzes zurück."
+
+gamble_support_country_4:0 "[gamble_support_country_4]"
+WINTER_slc_1:0 "[SOV.GetNameWithFlag]"
+WINTER_slc_2:0 "[FIN.GetNameWithFlag]"
+
+
+#DYNAMISCH
+dynamisch_variable1PLUS10_tt:0 "Setze £GFX_pol_power Y10 Political Power! auf Y[FROM.GetNameWithFlag]!\n\n "
+
+gamble_DYN_nation_auswahl:0 "Du hast nicht auf das gegnerische Land gesetzt."  
+gamble_cat_DYNAMIC_desc:0 "Du hast derzeit £GFX_pol_power Y[?EIGENE_DYN_eigene_PP_investment]! Political Power in alle Kriege investiert.\n\nUnten sind die wichtigsten Kriegsführer jeder Seite aufgeführt. Du kannst nur auf eine Seite jedes Krieges setzen.\n\nDeine Political Power-Investition in jeden Krieg wird nach dessen Abschluss durch ein Friedensabkommen Yverdoppelt!.\n\nRBITTE BEACHTE: Die Dynamic Wars-Funktion befindet sich noch in der Entwicklung. Falls du auf Fehler stößt, melde sie bitte in der Workshop-Diskussion unter dem Stakes of Iron-Mod. (Du kannst diese Funktion in den Spielregeln bearbeiten)!\n\nName des Landes (Gesamtinvestition) (YDeine eigene Investition!)"
+
+gamble_dynamic_d_1:0 "[FROM.GetName] ([?FROM.DYN_eigene_PP_investment]) (Y[?ROOT.DYN_bet_count_FOR_@FROM|0]!)"
+gamble_dynamic_d_2:0 "DEBUG - Array löschen"
+gamble_cat_DYNAMIC:0 "YDynamic Wars!"
+
+gamble.1.t:0 "GStakes of Iron!: Ein Dynamic War ist beendet"
+gamble.1.d:0 "Ein GDynamic War! ist beendet, und jetzt ist es Zeit, bezahlt zu werden – oder auch nicht.\n\nRBITTE BEACHTE: Die Dynamic Wars-Funktion befindet sich noch in der Entwicklung. Falls du auf Fehler stößt, melde sie bitte in der Workshop-Diskussion unter dem Stakes of Iron Mod. (Du kannst diese Funktion in den Spielregeln bearbeiten)!"
+gamble.1.a:0 "Okay"
+Gambling_System:0 "Gambling System"

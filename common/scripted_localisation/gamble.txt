@@ -1,0 +1,82 @@
+
+
+defined_text = {
+	name = gamble_support_country_1
+	text = {
+		
+			trigger = {check_variable = {gamble_support_country = 1}}
+			localization_key = Test1
+		}
+		text = {
+			trigger = {check_variable = {gamble_support_country = 0}}
+		localization_key = Test0
+		
+	}
+	text = {
+		trigger = {check_variable = {gamble_support_country = 2}}
+	localization_key = Test2
+	
+}
+	
+
+
+}
+defined_text = {
+	name = gamble_support_country_2
+		text = {
+			trigger = {check_variable = {SPR_gamble_support_country = 0}}
+		localization_key = Test0
+		
+	}
+	text = {
+		trigger = {check_variable = {SPR_gamble_support_country = 1}}
+	localization_key = SPR_slc_1
+}
+text = {
+	trigger = {check_variable = {SPR_gamble_support_country = 2}}
+localization_key = SPR_slc_2
+}	
+text = {
+	trigger = {check_variable = {SPR_gamble_support_country = 3}}
+localization_key = SPR_slc_3
+}	
+text = {
+	trigger = {check_variable = {SPR_gamble_support_country = 4}}
+localization_key = SPR_slc_4
+}	
+}
+
+defined_text = {
+	name = gamble_support_country_3
+		text = {
+			trigger = {check_variable = {CHINA_gamble_support_country = 0}}
+		localization_key = Test0
+		
+	}
+	text = {
+		trigger = {check_variable = {CHINA_gamble_support_country = 1}}
+	localization_key = CHINA_slc_1
+}
+text = {
+	trigger = {check_variable = {CHINA_gamble_support_country = 2}}
+localization_key = CHINA_slc_2
+}	
+	
+}
+defined_text = {
+	name = gamble_support_country_4
+		text = {
+			trigger = {check_variable = {WINTER_gamble_support_country = 0}}
+		localization_key = Test0
+		
+	}
+	text = {
+		trigger = {check_variable = {WINTER_gamble_support_country = 1}}
+	localization_key = WINTER_slc_1
+}
+text = {
+	trigger = {check_variable = {WINTER_gamble_support_country = 2}}
+localization_key = WINTER_slc_2
+}	
+	
+}

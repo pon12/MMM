@@ -1,0 +1,216 @@
+on_actions = {
+    on_weekly = {
+        effect = {
+		if = {
+				limit = {
+					NOT = { has_global_flag =  gamble_ETH_hat_gewonnen_flag}
+					NOT = { has_global_flag =  gamble_ITA_hat_gewonnen_flag}
+					or = {
+						has_game_rule = {
+						rule = gambling_game_rule_1
+						option = gamble_rule_only_premade
+					} 
+						has_game_rule = {
+							rule = gambling_game_rule_1
+							option = gamble_rule_both
+					} 
+				}
+				}
+          
+every_country = {
+	set_variable = {
+		var = ETH_eigene_PP_investmentzsm
+		value = ETH_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = ETH_eigene_PP_investmentzsm
+		value = ETH_eigene_PP_investment
+	}
+#	add_to_variable = {
+#		var = ETH_eigene_PP_investmentzsm
+#		value = ETH_eigene_PP_investment
+#	}
+#	add_to_variable = {
+#		var = ETH_eigene_PP_investmentzsm
+#		value = ETH_eigene_PP_investment
+#	}
+
+
+
+	set_variable = {
+		var = ITA_eigene_PP_investmentzsm
+		value = ITA_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = ITA_eigene_PP_investmentzsm
+		value = ITA_eigene_PP_investment
+	}
+}
+
+}
+#china
+if = {
+limit = { 
+	NOT = {has_global_flag = gamble_JAP_hat_gewonnen_flag 
+	or = {
+		has_game_rule = {
+		rule = gambling_game_rule_1
+		option = gamble_rule_only_premade
+	} 
+		has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_both
+	} 
+}
+}
+NOT = {has_global_flag = gamble_CHI_hat_gewonnen_flag }}
+	set_variable = {
+		var = JAP_eigene_PP_investmentzsm
+		value = JAP_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = JAP_eigene_PP_investmentzsm
+		value = JAP_eigene_PP_investment
+	}
+	set_variable = {
+		var = CHI_eigene_PP_investmentzsm
+		value = CHI_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = CHI_eigene_PP_investmentzsm
+		value = CHI_eigene_PP_investment
+	}
+
+}
+	#spanien
+	if = {
+		limit = { NOT = { has_global_flag = gamble_SPR_vorbei }
+		or = {
+			has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_only_premade
+		} 
+			has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_both
+		} 
+	}
+	}
+	set_variable = {
+		var = SPR_eigene_PP_investmentzsm
+		value = SPR_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = SPR_eigene_PP_investmentzsm
+		value = SPR_eigene_PP_investment
+	}
+
+	set_variable = {
+		var = D01_eigene_PP_investmentzsm
+		value = D01_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = D01_eigene_PP_investmentzsm
+		value = D01_eigene_PP_investment
+	}
+	set_variable = {
+		var = D02_eigene_PP_investmentzsm
+		value = D02_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = D02_eigene_PP_investmentzsm
+		value = D02_eigene_PP_investment
+	}
+	set_variable = {
+		var = D03_eigene_PP_investmentzsm
+		value = D03_eigene_PP_investment
+	}
+	add_to_variable = {
+		var = D03_eigene_PP_investmentzsm
+		value = D03_eigene_PP_investment
+	}
+		}
+
+
+		#WINTER
+if = {
+	limit = { NOT = {has_global_flag = gamble_FIN_hat_gewonnen_flag 
+	or = {
+		has_game_rule = {
+		rule = gambling_game_rule_1
+		option = gamble_rule_only_premade
+	} 
+		has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_both
+	} 
+}
+}
+	NOT = {has_global_flag = gamble_SOV_hat_gewonnen_flag }}
+		set_variable = {
+			var = SOV_eigene_PP_investmentzsm
+			value = SOV_eigene_PP_investment
+		}
+		add_to_variable = {
+			var = SOV_eigene_PP_investmentzsm
+			value = SOV_eigene_PP_investment
+		}
+		set_variable = {
+			var = FIN_eigene_PP_investmentzsm
+			value = FIN_eigene_PP_investment
+		}
+		add_to_variable = {
+			var = FIN_eigene_PP_investmentzsm
+			value = FIN_eigene_PP_investment
+		}
+	
+	}
+			
+    }	
+}
+
+on_peaceconference_ended = {
+    effect = {
+		if = {
+			limit = {  
+				or = {
+					has_game_rule = {
+					rule = gambling_game_rule_1
+					option = gamble_rule_only_dynamic
+				} 
+					has_game_rule = {
+						rule = gambling_game_rule_1
+						option = gamble_rule_both
+				} 
+			}
+			}
+		every_country = {
+			
+				
+					set_variable = {
+						var = DYN_bet_final
+						value = DYN_bet_count_FOR_@ROOT
+					}
+					add_to_variable = {
+						var = DYN_bet_final
+						value = DYN_bet_count_FOR_@ROOT
+					}
+					substract_from_variable = {
+						var = EIGENE_DYN_eigene_PP_investment
+						value = DYN_bet_count_FOR_@ROOT
+					}
+					set_variable = {
+						var = ROOT.DYN_eigene_PP_investment
+						value = 0
+					}
+					set_variable = {
+						var = DYN_bet_count_FOR_@ROOT
+						value = 0
+					}
+
+
+				country_event = gamble.1
+		}
+    }	}	
+}
+}

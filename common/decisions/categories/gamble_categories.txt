@@ -1,0 +1,104 @@
+
+gamble_cat = {
+	priority = 999
+	visible_when_empty = no
+	icon = generic_propaganda
+	visible = {
+		or = {
+			has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_only_premade
+		} 
+			has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_both
+		} 
+	}
+		NOT = { has_global_flag =  gamble_ETH_hat_gewonnen_flag}
+		NOT = { has_global_flag =  gamble_ITA_hat_gewonnen_flag}
+		
+}
+}
+
+gamble_cat_SPR = {
+	priority = 998
+	visible_when_empty = no
+	icon = generic_propaganda
+	visible = {
+		or = {
+			has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_only_premade
+		} 
+			has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_both
+		} 
+	}
+		NOT = { has_global_flag =  gamble_SPR_vorbei}
+	
+		
+}
+}
+
+gamble_cat_CHINA = {
+	priority = 997
+	visible_when_empty = no
+	icon = generic_propaganda
+	visible = {
+		or = {
+			has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_only_premade
+		} 
+			has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_both
+		} 
+	}
+		NOT = { has_global_flag =  gamble_CHINA_vorbei}
+	
+		
+}
+}
+gamble_cat_WINTER = {
+	priority = 996
+	visible_when_empty = no
+	icon = generic_propaganda
+	visible = {
+		or = {
+			has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_only_premade
+		} 
+			has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_both
+		} 
+	}
+		NOT = { has_global_flag =  gamble_WINTER_vorbei}
+	
+		
+}
+}
+
+gamble_cat_DYNAMIC = {
+	priority = 100
+	visible_when_empty = yes
+	icon = generic_money_bag
+	visible = { 
+		or = {
+			has_game_rule = {
+			rule = gambling_game_rule_1
+			option = gamble_rule_only_dynamic
+		} 
+			has_game_rule = {
+				rule = gambling_game_rule_1
+				option = gamble_rule_both
+		} 
+	}
+		
+}
+	
+
+}

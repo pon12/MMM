@@ -79,6 +79,35 @@ ideas = {
 				
 			}
 		}
+		NEUENG_British_Influnence = {
+			picture = hol_caved_to_the_british
+			
+			allowed = {
+			    always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				conscription_factor = 0.05
+				political_power_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = 0.1
+				political_advisor_cost_factor = -0.1
+			}
+			targeted_modifier = {
+				tag = ENG
+				attack_bonus_against = -0.05
+			}
+			
+		}
 		Slave_states = {
 			picture = ast_classify_aliens
 			
