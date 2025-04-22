@@ -1,0 +1,27 @@
+﻿#####################
+# German Events
+###########################
+
+add_namespace = mmm_ic_pon
+
+
+
+country_event = {
+    id = mmm_ic_pon.1
+    title = mmm_ic_pon.1.t
+    desc = mmm_ic_pon.1.desc
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = mmm_ic_pon.1.a
+        custom_effect_tooltip = MMM_pon_ic_links_tt
+		set_global_flag = MMM_pon_ic_links
+    }
+	option = {
+        name = mmm_ic_pon.1.b
+        custom_effect_tooltip = MMM_pon_ic_rechts_tt
+		set_global_flag = MMM_pon_ic_rechts
+    }
+
+}

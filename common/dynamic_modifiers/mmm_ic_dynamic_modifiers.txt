@@ -1,0 +1,14 @@
+MMM_inner_circle = {
+    icon = GFX_idea_RAJ_a_policy_of_silence
+    enable = { always = yes }
+    remove_trigger = {
+     #   NOT = {
+     #       has_variable = var_name
+     #   }
+    }
+
+		custom_modifier_tooltip = melone_ic_dm_melone_tt
+
+
+	
+}

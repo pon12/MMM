@@ -1,0 +1,164 @@
+add_namespace = startingevent
+
+country_event = {
+	id = startingevent.29
+	title = startingevent.29.t
+	desc = startingevent.29.desc
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Lang Lebe Michi"	
+	}
+}
+
+country_event = {
+	id = startingevent.30
+	title = startingevent.30.t
+	desc = startingevent.30.desc
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "30_Pot_1"	
+		ai_chance = {
+			base = 100
+			factor = 2
+		}
+		MON = {annex_country = {
+			target = TAN
+		} } 
+	}
+	option = {
+		name = "Never"	
+		ai_chance = {
+			base = 0
+			factor = 0
+		}
+		add_war_support = 0.1
+		add_political_power = 50
+		MON = { create_wargoal = {
+			target = TAN
+			type = annex_everything
+		} }
+	}
+}
+
+country_event = {
+	id = startingevent.31
+	title = startingevent.31.t
+	desc = startingevent.31.desc
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "31_Pot_1"	
+		ai_chance = {
+			base = 100
+			factor = 2
+		}
+		add_political_power = 50
+		add_stability = 0.05
+		MON = { 
+			add_political_power = 100
+			add_stability = 0.05
+		} 
+	}
+	option = {
+		name = "31_Pot_2"	
+		ai_chance = {
+			base = 100
+			factor = 2
+		}
+		random_state = {
+			limit = { is_core_of = ROOT is_controlled_by = ROOT }
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			
+		}
+		add_extra_state_shared_building_slots = 3
+	}
+		MON = { random_state = {
+			limit = { is_core_of = MON is_controlled_by = MON }
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			
+		}
+		add_extra_state_shared_building_slots = 3
+	} }
+	}
+	option = {
+		name = "31_Pot_3"	
+		ai_chance = {
+			base = 100
+			factor = 1
+		}
+		add_political_power = -25
+		MON = { add_political_power = -50 }
+	}
+}
+country_event = {
+	id = startingevent.32
+	title = startingevent.32.t
+	desc = startingevent.32.desc
+ 
+	picture = GFX_report_event_generic_sign_treaty1
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "32_Pot_1"	
+		ai_chance = {
+			base = 100
+			factor = 2
+		}
+		add_political_power = 50
+		add_war_support = 0.05
+		MON = { 
+			add_political_power = 100
+			add_war_support = 0.05
+		} 
+	}
+	option = {
+		name = "32_Pot_2"	
+		ai_chance = {
+			base = 100
+			factor = 2
+		}
+		random_state = {
+			limit = { is_core_of = ROOT is_controlled_by = ROOT }
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			
+		}
+		add_extra_state_shared_building_slots = 3
+	}
+		MON = { random_state = {
+			limit = { is_core_of = MON is_controlled_by = MON }
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			
+		}
+		add_extra_state_shared_building_slots = 3
+	} }
+	}
+	option = {
+		name = "32_Pot_3"	
+		ai_chance = {
+			base = 100
+			factor = 1
+		}
+		add_political_power = -25
+		MON = { add_political_power = -50 }
+	}
+}

@@ -1,0 +1,183 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			909 = {set_state_flag = MMM_Melone_dockyards_flag}
+			58 = {set_state_flag = MMM_Melone_dockyards_flag}
+			61 = {set_state_flag = MMM_Melone_dockyards_flag}
+			62 = {set_state_flag = MMM_Melone_dockyards_flag}
+			63 = {set_state_flag = MMM_Melone_dockyards_flag}
+		}
+	}
+
+
+
+    on_daily_GER = {
+        effect = {
+#melonz
+				if = {
+						limit = {
+							NOT = {has_global_flag = MMM_Melone_1_Fertig}
+							check_variable = {
+								var = GER.var_mmm_melone_ascended
+								value = 1
+							}
+							# check_variable = {
+							# 	var = GER.MMM_IC_melone_tage_zeahler_1
+							# 	value = 140
+							# 	compare = less_than_or_equals
+							# }
+						}
+					add_to_variable = {
+						var = GER.MMM_IC_melone_tage_zeahler_1
+						value = 1
+					}
+				}
+				else_if = {
+					limit = { NOT = {has_global_flag = MMM_Melone_2_Fertig} 
+						has_global_flag = MMM_Melone_1_Fertig
+						# check_variable = {
+						# 	var = GER.var_mmm_melone_ascended
+						# 	value = 1
+						# }
+
+				}
+					add_to_variable = {
+						var = GER.MMM_IC_melone_tage_zeahler_2
+						value = 1
+					}
+				}
+
+
+
+
+				if = {
+					limit = {
+						NOT = {has_global_flag = MMM_Melone_1_Fertig}
+						 check_variable = {
+						GER.MMM_IC_melone_tage_zeahler_1 = 140
+					} }
+					complete_national_focus = GER_MMM_expansion_of_dockyards
+					set_global_flag = MMM_Melone_1_Fertig
+				}
+
+				
+				if = {
+					limit = {
+						NOT = {has_global_flag = MMM_Melone_2_Fertig}
+						 check_variable = {
+						GER.MMM_IC_melone_tage_zeahler_2 = 140
+					} 
+				}
+					complete_national_focus = GER_MMM_expansion_of_dockyards2
+					set_global_flag = MMM_Melone_2_Fertig
+				}
+
+
+
+#talvin
+
+if = {
+	limit = {
+		NOT = {has_global_flag = MMM_talvin_1_Fertig}
+		check_variable = {
+			var = GER.var_mmm_talvin_ascended
+			value = 1
+		}
+		# check_variable = {
+		# 	var = GER.MMM_IC_melone_tage_zeahler_1
+		# 	value = 140
+		# 	compare = less_than_or_equals
+		# }
+	}
+add_to_variable = {
+	var = GER.MMM_IC_talvin_tage_zeahler_1
+	value = 1
+}
+}
+
+
+if = {
+	limit = {
+		NOT = {has_global_flag = MMM_talvin_1_Fertig}
+		 check_variable = {
+		GER.MMM_IC_talvin_tage_zeahler_1 = 140
+	} }
+	complete_national_focus = GER_MMM_civ_greed
+	set_global_flag = MMM_talvin_1_Fertig
+}
+
+#pon
+
+
+if = {
+	limit = {
+		NOT = {has_global_flag = MMM_pon_1_Fertig}
+		check_variable = {
+			var = GER.var_mmm_pon_ascended
+			value = 1
+		}
+	}
+add_to_variable = {
+	var = GER.MMM_IC_pon_tage_zeahler_1
+	value = 1
+}
+}
+else_if = {
+	limit = { NOT = {has_global_flag = MMM_pon_2_Fertig} 
+		has_global_flag = MMM_pon_1_Fertig
+		}
+	add_to_variable = {
+		var = GER.MMM_IC_pon_tage_zeahler_2
+		value = 1
+	}
+}
+
+
+if = {
+	limit = {
+		NOT = {has_global_flag = MMM_pon_1_Fertig}
+		 check_variable = {
+		GER.MMM_IC_pon_tage_zeahler_1 = 140
+	} 
+}
+	if = { 
+		limit = {  has_global_flag = MMM_pon_ic_links }
+		complete_national_focus = GER_MMM_freund_der_autarky
+		set_global_flag = MMM_pon_1_Fertig
+	}
+	if = { 
+		limit = {  has_global_flag = MMM_pon_ic_rechts }
+		complete_national_focus = GER_MMM_command_economy
+		set_global_flag = MMM_pon_1_Fertig
+	}
+	set_global_flag = MMM_pon_1_Fertig
+}
+if = {
+	limit = {
+		NOT = {has_global_flag = MMM_pon_2_Fertig}
+		 check_variable = {
+		GER.MMM_IC_pon_tage_zeahler_2 = 140
+	} 
+}
+	if = { 
+		limit = {  has_global_flag = MMM_pon_ic_links }
+		complete_national_focus = GER_MMM_freund_der_autarky2
+
+	}
+	if = { 
+		limit = {  has_global_flag = MMM_pon_ic_rechts }
+		complete_national_focus = GER_MMM_command_economy2
+
+	}
+	set_global_flag = MMM_pon_2_Fertig
+}
+
+
+
+
+
+
+		}
+
+    }
+}

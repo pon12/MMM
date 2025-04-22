@@ -17443,6 +17443,774 @@ focus_tree = {
 
 
 
+focus = {
+	id = GER_MMM_maierprinzip
+
+	
+	#icon = GFX_focus_GER_support_the_fuhrer_historical
+
+	icon = GFX_focus_RAJ_a_policy_of_silence
+
+	
+	x = -40
+	y = 8
+	relative_position_id = GER_remilitarize_the_rhineland
+	cost = 5
+	available = {
+	}
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_HISTORICAL FOCUS_FILTER_POLITICAL FOCUS_FILTER_POLITICAL_CHARACTER }
+
+	completion_reward = {
+		custom_effect_tooltip = GER_MMM_activate_ic_tt
+		custom_effect_tooltip = generic_skip_one_line_tt
+		add_political_power = 50
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		}
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		
+			add_dynamic_modifier = {
+				modifier = MMM_inner_circle
+			}
+			set_variable = {
+				var = GER.var_mmm_melone_ascended
+				value = 0
+			}
+	}
+}
+
+
+
+focus = {
+	id = GER_MMM_ascension_of_melon
+	icon = GFX_focus_GER_ascension_of_todt
+	prerequisite = { focus = GER_MMM_maierprinzip }
+
+	x = -7
+	y = 1
+	relative_position_id = GER_MMM_maierprinzip
+	cost = 2
+	
+	available = {
+		
+		
+	}
+
+	#Focus will need to pause while events are pending
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+
+	completion_reward = {
+		custom_effect_tooltip = {
+			localization_key = GER_MMM_ascension_of_melon_tt
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		show_ideas_tooltip = mmm_ic_melone_1
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+
+		set_variable = {
+			var = GER.var_mmm_melone_ascended
+			value = 1
+		}
+		set_country_flag = GER_MMM_melone_ascended_flag
+		hidden_effect = {
+			add_ideas = mmm_ic_melone_1
+		}
+	
+	}
+}
+
+focus = {
+	id = GER_MMM_expansion_of_dockyards
+	icon = GFX_focus_generic_refit_civilian_ships
+	prerequisite = { focus = GER_MMM_ascension_of_melon }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = 0
+	y = 1
+	relative_position_id = GER_MMM_ascension_of_melon
+	cost = 20
+	
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_melon
+			}
+			always = no
+		}
+	
+		
+	}
+
+
+	#Focus will need to pause while events are pending
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+
+
+	
+
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				add_idea = mmm_ic_melone_2
+				remove_idea = mmm_ic_melone_1
+			}
+
+		}
+		set_variable = {
+			var = GER.var_mmm_melone_ascended
+			value = 2
+		}
+		hidden_effect = {
+			add_ideas = mmm_ic_melone_2
+			remove_ideas = mmm_ic_melone_1
+		}
+	
+	}
+}
+
+
+focus = {
+	id = GER_MMM_expansion_of_dockyards2
+	icon = GFX_goal_generic_construct_naval_dockyard
+	prerequisite = { focus = GER_MMM_expansion_of_dockyards }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = 0
+	y = 1
+	relative_position_id = GER_MMM_expansion_of_dockyards
+	cost = 20
+	
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_melon_2
+			}
+			always = no
+		}
+	
+		
+	}
+
+
+	#Focus will need to pause while events are pending
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+
+
+	
+
+	completion_reward = {
+		every_core_state = {
+			limit = {
+				# is_coastal = yes
+				# is_fully_controlled_by = GER 
+				has_state_flag = MMM_Melone_dockyards_flag
+			}
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+
+
+		# set_variable = {
+		# 	var = GER.var_mmm_melone_ascended
+		# 	value = 3
+		# }
+		# hidden_effect = {
+		# 	add_ideas = mmm_ic_melone_2
+		# 	remove_ideas = mmm_ic_melone_1
+		# }
+	}
+}
+focus = {
+	id = GER_MMM_melonz_letzter_focus
+	icon = GFX_focus_AFG_work_with_german_inteligence
+	prerequisite = { focus = GER_MMM_expansion_of_dockyards2  }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = 0
+	y = 1
+	relative_position_id =  GER_MMM_expansion_of_dockyards2
+	cost = 40
+	
+	
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_melon3
+			}
+			always = no
+		}
+	
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		#  effect_tooltip = {
+		#  	swap_ideas = {
+		#  		add_idea = mmm_ic_pon_3_r
+		#  		remove_idea = mmm_ic_pon_3
+		#  	}
+
+		#  }
+		# set_variable = {
+		# 	var = GER.var_mmm_pon_ascended
+		# 	value = 4
+		# }
+		
+		
+
+		# hidden_effect = {
+		# 	add_ideas = mmm_ic_pon_3_r
+		# 	remove_ideas = mmm_ic_pon_3
+		# }
+	
+	}
+}
+
+
+focus = {
+	id = GER_MMM_ascension_of_pon
+	icon = GFX_focus_GER_ascension_of_todt
+	prerequisite = { focus = GER_MMM_maierprinzip }
+
+	x = -4
+	y = 1
+	relative_position_id = GER_MMM_maierprinzip
+	cost = 2
+	
+	available = {
+		
+		
+	}
+
+	#Focus will need to pause while events are pending
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+
+
+	completion_reward = {
+		custom_effect_tooltip = {
+			localization_key = GER_MMM_ascension_of_pon_tt
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		show_ideas_tooltip = mmm_ic_pon_1
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		country_event = mmm_ic_pon.1
+
+		set_variable = {
+			var = GER.var_mmm_pon_ascended
+			value = 1
+		}
+		set_country_flag = GER_MMM_pon_ascended_flag
+		hidden_effect = {
+			add_ideas = mmm_ic_pon_1
+		}
+	
+	}
+}
+
+
+
+focus = {
+	id = GER_MMM_freund_der_autarky
+	icon = GFX_focus_DEN_limited_regulations
+	prerequisite = { focus = GER_MMM_ascension_of_pon }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = -1
+	y = 1
+	relative_position_id = GER_MMM_ascension_of_pon
+	cost = 20
+	
+	mutually_exclusive = { focus = GER_MMM_command_economy }
+
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_pon
+			}
+			always = no
+		}
+	
+		
+	}
+
+
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				add_idea = mmm_ic_pon_2
+				remove_idea = mmm_ic_pon_1
+			}
+
+		}
+		set_variable = {
+			var = GER.var_mmm_pon_ascended
+			value = 2
+		}
+		hidden_effect = {
+			add_ideas = mmm_ic_pon_2
+			remove_ideas = mmm_ic_pon_1
+		}
+	
+	}
+}
+
+focus = {
+	id = GER_MMM_freund_der_autarky2
+	icon = GFX_focus_RAJ_special_economic_zones
+	prerequisite = { focus = GER_MMM_freund_der_autarky }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = 0
+	y = 1
+	relative_position_id = GER_MMM_freund_der_autarky
+	cost = 20
+
+
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_pon2
+			}
+			always = no
+		}
+	
+		
+	}
+
+
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				add_idea = mmm_ic_pon_2_l
+				remove_idea = mmm_ic_pon_2
+			}
+
+		}
+		random_state = {
+			limit = {
+				is_core_of = GER
+				is_controlled_by = GER
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			
+		}
+		random_state = {
+			limit = {
+				is_core_of = GER
+				is_controlled_by = GER
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			
+		}
+
+
+		set_variable = {
+			var = GER.var_mmm_pon_ascended
+			value = 5
+		}
+		hidden_effect = {
+			add_ideas = mmm_ic_pon_2_l
+			remove_ideas = mmm_ic_pon_2
+		}
+	
+	}
+}
+
+
+
+focus = {
+	id = GER_MMM_command_economy
+	icon = GFX_focus_DEN_heavy_regulations
+	prerequisite = { focus = GER_MMM_ascension_of_pon }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = 1
+	y = 1
+	relative_position_id = GER_MMM_ascension_of_pon
+	cost = 20
+	
+	mutually_exclusive = { focus = GER_MMM_freund_der_autarky }
+
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_pon
+			}
+			always = no
+		}
+	
+	
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				add_idea = mmm_ic_pon_3
+				remove_idea = mmm_ic_pon_1
+			}
+
+		}
+		set_variable = {
+			var = GER.var_mmm_pon_ascended
+			value = 3
+		}
+		hidden_effect = {
+			add_ideas = mmm_ic_pon_3
+			remove_ideas = mmm_ic_pon_1
+		}
+	
+	}
+}
+focus = {
+	id = GER_MMM_command_economy2
+	icon = GFX_focus_generic_central_planning
+	prerequisite = { focus = GER_MMM_command_economy }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = 0
+	y = 1
+	relative_position_id = GER_MMM_command_economy
+	cost = 20
+	
+	
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_pon2
+			}
+			always = no
+		}
+	
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		 effect_tooltip = {
+		 	swap_ideas = {
+		 		add_idea = mmm_ic_pon_3_r
+		 		remove_idea = mmm_ic_pon_3
+		 	}
+
+		 }
+		set_variable = {
+			var = GER.var_mmm_pon_ascended
+			value = 4
+		}
+		random_state = {
+			limit = { is_controlled_by = GER 
+					is_core_of = GER
+		}
+		add_resource = {
+			type = steel
+			amount = 16
+
+		}
+		}
+		random_state = {
+			limit = { is_controlled_by = GER 
+					is_core_of = GER
+		}
+		add_resource = {
+			type = aluminium
+			amount = 12
+
+		}
+		}
+		random_state = {
+			limit = { is_controlled_by = GER 
+					is_core_of = GER
+		}
+		add_resource = {
+			type = chromium
+			amount = 10
+
+		}
+		}
+		random_state = {
+			limit = { is_controlled_by = GER 
+					is_core_of = GER
+		}
+		add_resource = {
+			type = tungsten
+			amount = 12
+
+		}
+		}
+		random_state = {
+			limit = { is_controlled_by = GER 
+					is_core_of = GER
+		}
+		add_resource = {
+			type = oil
+			amount = 5
+
+		}
+		add_resource = {
+			type = rubber
+			amount = 6
+
+		}
+		}
+		
+
+		hidden_effect = {
+			add_ideas = mmm_ic_pon_3_r
+			remove_ideas = mmm_ic_pon_3
+		}
+	
+	}
+}
+focus = {
+	id = GER_MMM_pon_letzter_focus
+	icon = GFX_focus_generic_central_planning
+	prerequisite = { focus = GER_MMM_command_economy2 focus = GER_MMM_freund_der_autarky2 }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = -1
+	y = 1
+	relative_position_id = GER_MMM_command_economy2
+	cost = 40
+	
+	
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_pon3
+			}
+			always = no
+		}
+	
+	}
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		#  effect_tooltip = {
+		#  	swap_ideas = {
+		#  		add_idea = mmm_ic_pon_3_r
+		#  		remove_idea = mmm_ic_pon_3
+		#  	}
+
+		#  }
+		# set_variable = {
+		# 	var = GER.var_mmm_pon_ascended
+		# 	value = 4
+		# }
+		
+		
+
+		# hidden_effect = {
+		# 	add_ideas = mmm_ic_pon_3_r
+		# 	remove_ideas = mmm_ic_pon_3
+		# }
+	
+	}
+}
+
+
+
+
+focus = {
+	id = GER_MMM_ascension_of_talvin
+	icon = GFX_focus_GER_ascension_of_todt
+	prerequisite = { focus = GER_MMM_maierprinzip }
+
+	x = -1
+	y = 1
+	relative_position_id = GER_MMM_maierprinzip
+	cost = 2
+	
+	available = {
+		
+		
+	}
+
+	#Focus will need to pause while events are pending
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+
+
+	completion_reward = {
+		custom_effect_tooltip = {
+			localization_key = GER_MMM_ascension_of_talvin_tt
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+		show_ideas_tooltip = mmm_ic_talvin_1
+
+		custom_effect_tooltip = generic_skip_one_line_tt
+
+
+		set_variable = {
+			var = GER.var_mmm_talvin_ascended
+			value = 1
+		}
+		set_country_flag = GER_MMM_talvin_ascended_flag
+		hidden_effect = {
+			add_ideas = mmm_ic_talvin_1
+		}
+	
+	}
+}
+
+
+focus = {
+	id = GER_MMM_civ_greed
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = GER_MMM_ascension_of_talvin }
+
+	text_icon = GER_inner_circle_focus_style
+
+	x = 0
+	y = 1
+	relative_position_id = GER_MMM_ascension_of_talvin
+	cost = 20
+	
+	available = {
+
+		custom_override_tooltip = {
+			tooltip = {
+				localization_key = MMM_focus_can_only_completed_by_talvin
+			}
+			always = no
+		}
+	
+		
+	}
+
+	cancel_if_invalid = no
+	continue_if_invalid = no
+
+	search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		effect_tooltip = {
+			swap_ideas = {
+				add_idea = mmm_ic_talvin_2
+				remove_idea = mmm_ic_talvin_1
+			}
+
+		}
+		set_variable = {
+			var = GER.var_mmm_talvin_ascended
+			value = 2
+		}
+		hidden_effect = {
+			add_ideas = mmm_ic_talvin_2
+			remove_ideas = mmm_ic_talvin_1
+		}
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 	focus = {
 		id = GER_fuhrerprinzip
 

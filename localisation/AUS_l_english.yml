@@ -37,8 +37,8 @@
  Samsara_Vartinl: "Samsara Vartin"
  Samsara_Vartin: "Samsara Vartin"
 
-CHEAT13:0 "Add Horrible Industry"
-CHEAT14:0 "Remove Horrible Industry"
+ CHEAT13:0 "Add Horrible Industry"
+ CHEAT14:0 "Remove Horrible Industry"
 horrible_industry:0 "Horrible Industry"
 horrible_industry_desc:0 "In theory the collectivisation of economy, that would mean that the workers of our nation would start administratin our own industry without landlords, what is more, wegave them guides and we even taught them how properly manage a factory. \nWhen the colectivization began, they took all the money and wasted it in alcohol...THEY HAVENT PRODUCED ANYTHING SINCE 1931\n\nYNur für Raufaser eingebaut, viel Spaß du ficker\n - Dein Pon!"
 
@@ -175,3 +175,95 @@ JAP_medium_trust_range:0 "Balanced"
 JAP_high_trust_range:0 "Army Strengthened"
 JAP_very_high_trust_range:0 "Army Dominant"
 NEUENG_British_Influnence:0 "British Influence"
+
+
+GER_MMM_maierprinzip:0 "Maier Prinzip"
+
+#melone
+GER_MMM_ascension_of_melon:0 "Aufstieg der Melone"
+GER_MMM_ascension_of_melon_tt:0 "YMelone! wird in YMaiers Inneren Kreis! aufgenommen."
+GER_MMM_expansion_of_dockyards:0 "The Navy Guy"
+GER_MMM_expansion_of_dockyards2:0 "Naval Hegemony"
+GER_MMM_melonz_letzter_focus:0 "Spy Master"
+mmm_ic_melone_1:0 "Melone"
+mmm_ic_melone_2:0 "Melone"
+
+
+melone_ic_0_tt:0 ""
+melone_ic_1_tt:0 "YMelone! who grants:\n £GFX_political_violence_texticon  Resistance Target: G-10%!\n £GFX_compliance_gain_texticon  Compliance Gain: R-0.02%!\n £GFX_pol_power  Political Power Gain: R-0.10! "
+
+melone_ic_2_tt:0 "YMelone! who grants:\n £GFX_political_violence_texticon  Resistance Target: G-10%!\n £GFX_construction_speed_dockyard_texticon  YDockyard! construction speed: G+15%!\n £GFX_dockyard_output_texticon  Dockyard Output: G+15%!\n £GFX_defence_battleship_texticon  Capital Ship Armor: G+10%!\n £GFX_compliance_gain_texticon  Compliance Gain: R-0.02%!\n £GFX_pol_power  Political Power Gain: R-0.15!"
+
+
+MMM_focus_can_only_completed_by_melon:0 "This Focus can only be Completed by YMelone! \nCCurrent Days!: Y[?GER.MMM_IC_melone_tage_zeahler_1]!"
+MMM_focus_can_only_completed_by_melon_2:0 "This Focus can only be Completed by YMelone! \nCCurrent Days!: Y[?GER.MMM_IC_melone_tage_zeahler_2]!"
+
+#pon construction_speed_texticon resources_texticon efficiency_growth_texticon efficiency_base_texticon production_efficiency_loss_texticon GFX_prod_eff_cap
+# factory_output_texticon research_speed_texticon traded_goods_texticon
+GER_MMM_ascension_of_pon:0 "Aufstieg von Pon"
+GER_MMM_ascension_of_pon_tt:0 "YPon! wird in YMaiers Inneren Kreis! aufgenommen."
+GER_MMM_freund_der_autarky:0 "Economic Regulations"
+GER_MMM_freund_der_autarky2:0 "Private Investment"
+GER_MMM_command_economy:0 "Command Economy"
+GER_MMM_command_economy2:0 "Autarky Adjustment Act"
+mmm_ic_pon_1:0 "Pon"
+mmm_ic_pon_2:0 "Pon"
+mmm_ic_pon_2_l:0 "Pon"
+mmm_ic_pon_3:0 "Pon"
+mmm_ic_pon_3_r:0 "Pon"
+
+pon_ic_0_tt:0 ""
+pon_ic_1_tt:0 "\n\nYPon! who grants:\n £GFX_civ_factory  Max Factories in a State: G+20%!\n £GFX_construction_speed_texticon  Construction Speed: G+5%!\n £GFX_resources_texticon  Resource Gain Efficiency: G+5%!\n £GFX_pol_power  Political Power Gain: R-0.10!"
+
+pon_ic_2_tt:0 "\n\nYPon! who grants:\n £GFX_civ_factory  Max Factories in a State: G+20%!\n £GFX_construction_speed_texticon  Construction Speed: G+5%!\n £GFX_efficiency_growth_texticon  Production Efficiency Growth: G+5%!\n £GFX_factory_output_texticon  Factory Output: G+10%!\n £GFX_research_speed_texticon  Research Speed: G+10%!\n £GFX_resources_texticon  Resource Gain Efficiency: G+5%!\n £GFX_traded_goods_texticon  Resources to Market: Y+10%!\n £GFX_pol_power  Political Power Gain: R-0.15!"
+pon_ic_5_tt:0 "\n\nYPon! who grants:\n £GFX_civ_factory  Max Factories in a State: G+20%!\n £GFX_construction_speed_texticon  Construction Speed: G+5%!\n £GFX_efficiency_growth_texticon  Production Efficiency Growth: G+5%!\n £GFX_factory_output_texticon  Factory Output: G+20%!\n £GFX_research_speed_texticon  Research Speed: G+15%!\n £GFX_resources_texticon  Resource Gain Efficiency: G+5%!\n £GFX_traded_goods_texticon  Resources to Market: Y+10%!\n £GFX_pol_power  Political Power Gain: R-0.25!"
+
+pon_ic_3_tt:0 "\n\nYPon! who grants:\n £GFX_civ_factory  Max Factories in a State: G+20%!\n £GFX_civ_factory  Max Factories in a State: G+1!\n £GFX_construction_speed_texticon  Construction Speed: G+5%!\n £GFX_prod_eff_cap  Production Efficiency Cap: G+5%!\n £GFX_production_efficiency_loss_texticon  Production Efficiency Retention: G+5%!\n £GFX_efficiency_base_texticon  Production Efficiency Base: G+5%!\n £GFX_resources_texticon  Resource Gain Efficiency: G+5%!\n £GFX_pol_power  Political Power Gain: R-0.25!"
+
+pon_ic_4_tt:0 "\n\nYPon! who grants:\n £GFX_civ_factory  Max Factories in a State: G+20%!\n £GFX_civ_factory  Max Factories in a State: G+1!\n £GFX_construction_speed_texticon  Construction Speed: G+5%!\n £GFX_prod_eff_cap  Production Efficiency Cap: G+5%!\n £GFX_production_efficiency_loss_texticon  Production Efficiency Retention: G+5%!\n £GFX_efficiency_base_texticon  Production Efficiency Base: G+5%!\n £GFX_resources_texticon  Resource Gain Efficiency: G+20%!\n £GFX_traded_goods_texticon  Resources to Market: Y-10%!\n £GFX_pol_power  Political Power Gain: R-0.40!"
+
+MMM_focus_can_only_completed_by_pon:0 "This Focus can only be Completed by YPon! \nCCurrent Days!: Y[?GER.MMM_IC_pon_tage_zeahler_1]!"
+MMM_focus_can_only_completed_by_pon2:0 "This Focus can only be Completed by YPon! \nCCurrent Days!: Y[?GER.MMM_IC_pon_tage_zeahler_2]!"
+
+#pon event
+mmm_ic_pon.1.t:0 "Pons Economic Decision"
+mmm_ic_pon.1.desc:0 "You decide wether Pon will go for a regulated economy witz limited state intervention or if he goas for a command economy with full state intervention."
+mmm_ic_pon.1.a:0 "Economic Regulations"
+mmm_ic_pon.1.b:0 "Command Economy"
+MMM_pon_ic_links_tt:0 "YPon! will complete the focus YEconomic Regulations!."
+MMM_pon_ic_rechts_tt:0 "YPon! will complete the focus YCommand Economy!."
+
+
+#talvin consumer_goods_texticon
+GER_MMM_ascension_of_talvin:0 "Aufstieg von Talvin"
+GER_MMM_civ_greed:0 "Civ Greed"
+
+GER_MMM_ascension_of_talvin_tt:0 "YTalvin! wird in YMaiers Inneren Kreis! aufgenommen."
+mmm_ic_talvin_1:0 "Talvin"
+mmm_ic_talvin_2:0 "Talvin"
+
+talvin_ic_0_tt:0 ""
+talvin_ic_1_tt:0 "\n\nYTalvin! who grants:\n £GFX_construction_speed_civfactory_texticon  YCivilian Factory! construction speed: G+10%!\n £GFX_construction_speed_infrastructure_texticon  YInfrastructure! construction speed: G+15%!\n £GFX_construction_speed_milfactory_texticon  YMilitary Factory! construction speed: R-5%!\n £GFX_construction_speed_dockyard_texticon  YDockyard! construction speed: R-5%!\n £GFX_pol_power  Political Power Gain: R-0.10!"
+talvin_ic_2_tt:0 "\n\nYTalvin! who grants:\n £GFX_construction_speed_civfactory_texticon  YCivilian Factory! construction speed: G+25%!\n £GFX_consumer_goods_texticon  Consumer Goods Factories factor: Y-10%!\n £GFX_construction_speed_infrastructure_texticon  YInfrastructure! construction speed: G+15%!\n £GFX_construction_speed_milfactory_texticon  YMilitary Factory! construction speed: R-10%!\n £GFX_construction_speed_dockyard_texticon  YDockyard! construction speed: R-10%!\n £GFX_pol_power  Political Power Gain: R-0.20!"
+
+MMM_focus_can_only_completed_by_talvin:0 "This Focus can only be Completed by YTalvin! \nCCurrent Days!: Y[?GER.MMM_IC_talvin_tage_zeahler_1]!"
+
+
+MMM_inner_circle:0 "Maiers Innerer Kreis"
+
+GER_MMM_activate_ic_tt:0 "Aktiviert YMaiers Inneren Kreis!."
+
+
+melone_ic_dm_melone_tt:0 "CActive Inner Circle Advisors!: \n[melone_scripted_loc] [pon_scripted_loc] [talvin_scripted_loc]"
+
+
+
+#compliance_gain_texticon
+superior_firepower:0 "RSuperior Fire Pon!"
+SUPERIOR_FIREPOWER_DOCTRINE_LABEL:1 "RSuperior Fire Pon! Doctrine"
+SUPERIOR_FIREPOWER_DOCTRINE_DESC:0 "This doctrine focuses on throwing shells, not RPonys!, at the enemy. Our RPon! is precious, bullets are cheap."
+superior_firepower_desc:0 "This doctrine focuses on throwing shells, not Rponys!, at the enemy. Our RPon! is precious, bullets are cheap.\n\n"
+SUPERIOR_FIREPOWER_DOCTRINE:0 "RSuperior Fire Pon!"
+superior_firepower_expert:0 "RSuperior Fire Pon! Expert"
+cat_superior_firepower_cost_factor:0 "RSuperior Fire Pon! Doctrine Cost"
+CAREER_PROFILE_SUPERIOR_FIREPOWER_XP_LABEL:0 "RSuperior Fire Pon!"

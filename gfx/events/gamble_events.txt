@@ -1,0 +1,39 @@
+﻿add_namespace = gamble
+country_event = {
+	id = gamble.1
+	title = gamble.1.t
+	desc = gamble.1.d
+	picture = GFX_report_event_soviet_soldiers
+	
+	is_triggered_only = yes
+	
+	option = { 
+		name = gamble.1.a
+
+
+			
+				
+				add_political_power = DYN_bet_final
+				set_variable = {
+					var = DYN_bet_final
+					value = 0
+				}
+				remove_from_array = {
+					array = ROOT.DYN_support_countries
+					value = FROM.id
+				}
+				remove_from_array = {
+					array = ROOT.DYN_support_countries
+					value = ROOT.id
+				}
+
+		
+
+		
+
+	}
+
+}
+
+
+

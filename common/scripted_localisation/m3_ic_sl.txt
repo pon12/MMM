@@ -1,0 +1,150 @@
+defined_text = {
+    name = melone_scripted_loc
+	text = {
+    trigger = {
+        check_variable = {
+            var = GER.var_mmm_melone_ascended
+            value = 1
+            compare = equals
+        }
+    }
+    localization_key = melone_ic_1_tt
+    }
+	text = {
+        trigger = {
+            check_variable = {
+                var = GER.var_mmm_melone_ascended
+                value = 2
+                compare = equals
+            }
+        }
+        localization_key = melone_ic_2_tt
+        }
+
+
+    text = {
+	trigger = {
+		check_variable = {
+            var = GER.var_mmm_melone_ascended
+            value = 0
+            compare = equals
+        }
+	}
+    localization_key = melone_ic_0_tt
+    }
+
+
+
+}
+
+#pon
+defined_text = {
+    name = pon_scripted_loc
+	text = {
+    trigger = {
+        check_variable = {
+            var = GER.var_mmm_pon_ascended
+            value = 1
+            compare = equals
+        }
+    }
+    localization_key = pon_ic_1_tt
+    }
+    #links
+    text = {
+        trigger = {
+            check_variable = {
+                var = GER.var_mmm_pon_ascended
+                value = 2
+                compare = equals
+            }
+        }
+        localization_key = pon_ic_2_tt
+        }
+        text = {
+            trigger = {
+                check_variable = {
+                    var = GER.var_mmm_pon_ascended
+                    value = 5
+                    compare = equals
+                }
+            }
+            localization_key = pon_ic_5_tt
+            }
+
+        #rechts
+        text = {
+            trigger = {
+                check_variable = {
+                    var = GER.var_mmm_pon_ascended
+                    value = 3
+                    compare = equals
+                }
+            }
+            localization_key = pon_ic_3_tt
+            }
+            text = {
+                trigger = {
+                    check_variable = {
+                        var = GER.var_mmm_pon_ascended
+                        value = 4
+                        compare = equals
+                    }
+                }
+                localization_key = pon_ic_4_tt
+                }
+
+    
+    text = {
+	trigger = {
+		check_variable = {
+            var = GER.var_mmm_pon_ascended
+            value = 0
+            compare = equals
+        }
+	}
+    localization_key = pon_ic_0_tt
+    }
+
+
+}
+
+
+#talvin
+defined_text = {
+    name = talvin_scripted_loc
+	text = {
+    trigger = {
+        check_variable = {
+            var = GER.var_mmm_talvin_ascended
+            value = 1
+            compare = equals
+        }
+    }
+    localization_key = talvin_ic_1_tt
+    }
+    text = {
+        trigger = {
+            check_variable = {
+                var = GER.var_mmm_talvin_ascended
+                value = 2
+                compare = equals
+            }
+        }
+        localization_key = talvin_ic_2_tt
+        }
+
+    
+    text = {
+	trigger = {
+		check_variable = {
+            var = GER.var_mmm_talvin_ascended
+            value = 0
+            compare = equals
+        }
+	}
+    localization_key = talvin_ic_0_tt
+    }
+
+
+}
